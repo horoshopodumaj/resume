@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@400;700&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -31,6 +32,7 @@ aside {
 
 html,
 body {
+  font-family: "Montserrat", sans-serif;
   height: 100%;
   width: 100%;
   font-size: 100%;
@@ -114,6 +116,284 @@ h6 {
 
 .main {
   flex: 1;
+}
+
+.aboutme__title {
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+}
+.projects__title {
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.button {
+  height: 48px;
+  padding: 5px 20px;
+  border: 0px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500px;
+  line-height: 19px;
+  text-align: center;
+  white-space: nowrap;
+  position: relative;
+}
+.button:disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+.button_primary {
+  color: var(--white);
+  background-color: var(--blue-2);
+  transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
+}
+.button_primary:hover {
+  background-color: var(--blue-3);
+  cursor: pointer;
+}
+.button_secondary {
+  color: var(--white);
+  background-color: var(--purple);
+  transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
+}
+.button_secondary:hover {
+  background-color: var(--purple-2);
+  cursor: pointer;
+}
+.button_alternate {
+  border: 1px solid var(--grey-3);
+  background-color: var(--white);
+  color: var(--grey-4);
+  transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
+}
+.button_alternate:hover {
+  border: 1px solid var(--black);
+}
+.button_two {
+  background: linear-gradient(0deg, var(--blue-2) 0%, var(--blue-3) 100%);
+  color: var(--white);
+}
+.button_two:hover {
+  color: var(--purple-2);
+  background: transparent;
+  box-shadow: none;
+}
+.button_two:before, .button_two:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 2px;
+  width: 0;
+  background: var(--purple-2);
+  box-shadow: -1px -1px 5px 0px #fff, 7px 7px 20px 0px rgba(0, 0, 0, 0.2), 4px 4px 5px 0px rgba(0, 0, 0, 0.1333333333);
+  transition: 200ms ease all;
+}
+.button_two:after {
+  right: inherit;
+  top: inherit;
+  left: 0;
+  bottom: 0;
+}
+.button_two:hover:before, .button_two:hover:after {
+  width: 100%;
+  transition: 800ms ease all;
+}
+.button_three {
+  background: linear-gradient(0deg, var(--blue-8) 0%, var(--blue-3) 100%);
+  line-height: 47px;
+  padding: 0;
+  border: none;
+}
+.button_three span {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: var(--white);
+}
+.button_three:before, .button_three:after {
+  position: absolute;
+  content: "";
+  right: 0;
+  bottom: 0;
+  background: var(--blue-3);
+  box-shadow: -7px -7px 20px 0px rgba(255, 255, 255, 0.9), -4px -4px 5px 0px rgba(255, 255, 255, 0.9), 7px 7px 20px 0px rgba(0, 0, 0, 0.2), 4px 4px 5px 0px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+.button_three:before {
+  height: 0%;
+  width: 2px;
+}
+.button_three:after {
+  width: 0%;
+  height: 2px;
+}
+.button_three:hover {
+  color: var(--blue-3);
+  background: transparent;
+}
+.button_three span:hover {
+  color: var(--black);
+}
+.button_three:hover:before {
+  height: 100%;
+}
+.button_three:hover:after {
+  width: 100%;
+}
+.button_three span:before, .button_three span:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  background: var(--blue-3);
+  box-shadow: -7px -7px 20px 0px rgba(255, 255, 255, 0.9), -4px -4px 5px 0px rgba(255, 255, 255, 0.9), 7px 7px 20px 0px rgba(0, 0, 0, 0.2), 4px 4px 5px 0px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+.button_three span:before {
+  width: 2px;
+  height: 0%;
+}
+.button_three span:after {
+  height: 2px;
+  width: 0%;
+}
+.button_three span:hover:before {
+  height: 100%;
+}
+.button_three span:hover:after {
+  width: 100%;
+}
+.button_four {
+  color: var(--blue-8);
+  transition: 0.5s;
+  overflow: hidden;
+}
+.button_four:hover {
+  background: var(--blue-8);
+  color: var(--black);
+  box-shadow: 0 0 5px var(--blue-8), 0 0 25px var(--blue-8), 0 0 50px var(--blue-8), 0 0 200px var(--blue-8);
+  -webkit-box-reflect: below 1px linear-gradient(transparent, var(--black));
+}
+.button_four:nth-child(1) {
+  filter: hue-rotate(270deg);
+}
+.button_four:nth-child(2) {
+  filter: hue-rotate(110deg);
+}
+.button_four span {
+  position: absolute;
+  display: block;
+}
+.button_four span:nth-child(1) {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--blue-8));
+  animation: animate1 1s linear infinite;
+}
+.button_four span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, var(--blue-8));
+  animation: animate2 1s linear infinite;
+  animation-delay: 0.25s;
+}
+.button_four span:nth-child(3) {
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, var(--blue-8));
+  animation: animate3 1s linear infinite;
+  animation-delay: 0.5s;
+}
+.button_four span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, var(--blue-8));
+  animation: animate4 1s linear infinite;
+  animation-delay: 0.75s;
+}
+
+@keyframes animate1 {
+  0% {
+    left: -100%;
+  }
+  50%, 100% {
+    left: 100%;
+  }
+}
+@keyframes animate2 {
+  0% {
+    top: -100%;
+  }
+  50%, 100% {
+    top: 100%;
+  }
+}
+@keyframes animate3 {
+  0% {
+    right: -100%;
+  }
+  50%, 100% {
+    right: 100%;
+  }
+}
+@keyframes animate4 {
+  0% {
+    bottom: -100%;
+  }
+  50%, 100% {
+    bottom: 100%;
+  }
+}
+.project {
+  display: flex;
+  flex-direction: column;
+}
+.project__title {
+  font-weight: 700;
+  font-size: 2rem;
+  padding: 2rem 2rem 2rem 0;
+}
+.project__body {
+  display: flex;
+  gap: 2rem;
+}
+.project__img {
+  height: 100%;
+}
+.project__content {
+  display: block;
+  padding: 1rem;
+  height: 100%;
+}
+.project__content p {
+  font-family: "Lato", sans-serif;
+  font-size: 1.3rem;
+  line-height: 1.2;
+}
+.project__buttons {
+  display: flex;
+  padding: 1rem 1rem 1rem 0;
+}
+.project__button {
+  font-family: "Montserrat", sans-serif;
 }
 
 /*# sourceMappingURL=index.css.map */
