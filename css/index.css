@@ -1,4 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@400;700&display=swap");
+:root {
+  --grey: #f8f8ec;
+  --grey-2: #777777;
+  --grey-3: #333333;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -38,6 +44,7 @@ body {
   font-size: 100%;
   line-height: 1;
   font-size: 16px;
+  background-color: var(--grey);
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -104,6 +111,32 @@ h6 {
   justify-content: space-between;
 }
 
+.typed-cursor {
+  opacity: 1;
+}
+
+.typed-cursor.typed-cursor--blink {
+  animation: typedjsBlink 0.7s infinite;
+  -webkit-animation: typedjsBlink 0.7s infinite;
+  animation: typedjsBlink 0.7s infinite;
+}
+
+@keyframes typedjsBlink {
+  50% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes typedjsBlink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .navbar {
   display: flex;
   align-items: center;
@@ -122,6 +155,13 @@ h6 {
   font-size: 3rem;
   font-weight: 700;
   text-align: center;
+  color: var(--grey-2);
+}
+.aboutme__text {
+  font-family: "Lato", sans-serif;
+  color: var(--grey-3);
+  font-size: 1.3rem;
+  line-height: 1.2;
 }
 
 .projects {
@@ -132,6 +172,7 @@ h6 {
   font-size: 3rem;
   font-weight: 700;
   text-align: center;
+  color: var(--grey-2);
 }
 
 .button {
@@ -370,6 +411,7 @@ h6 {
   font-weight: 700;
   font-size: 2rem;
   padding: 2rem 2rem 2rem 0;
+  color: var(--grey-3);
 }
 .project__body {
   display: flex;
@@ -387,6 +429,7 @@ h6 {
   font-family: "Lato", sans-serif;
   font-size: 1.3rem;
   line-height: 1.2;
+  color: var(--grey-3);
 }
 .project__buttons {
   display: flex;

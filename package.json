@@ -18,5 +18,8 @@
     "homepage": "https://github.com/horoshopodumaj/resume#readme",
     "devDependencies": {
         "sass": "^1.53.0"
+    },
+    "dependencies": {
+        "typed.js": "^2.0.12"
     }
 }
