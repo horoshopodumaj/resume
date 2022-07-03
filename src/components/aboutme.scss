@@ -1,15 +1,28 @@
 .aboutme {
+    display: flex;
+
+    &__content {
+        padding: 2rem 5rem;
+    }
+
     &__title {
         font-size: 3rem;
         font-weight: 700;
         text-align: center;
         color: var(--grey-2);
+        padding-bottom: 2.5rem;
     }
 
     &__text {
         font-family: $second-font;
         color: var(--grey-3);
         font-size: 1.3rem;
-        line-height: 1.2;
+        line-height: 1.6;
+        text-align: justify;
+    }
+
+    &__img {
+        width: 325px;
+        height: 350px;
     }
 }
