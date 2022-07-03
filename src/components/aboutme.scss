@@ -1,0 +1,15 @@
+.aboutme {
+    &__title {
+        font-size: 3rem;
+        font-weight: 700;
+        text-align: center;
+        color: var(--grey-2);
+    }
+
+    &__text {
+        font-family: $second-font;
+        color: var(--grey-3);
+        font-size: 1.3rem;
+        line-height: 1.2;
+    }
+}

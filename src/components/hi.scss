@@ -1,0 +1,21 @@
+.hi {
+    height: 50%;
+    font-size: 3rem;
+
+    color: var(--grey-3);
+
+    & p {
+        margin: 1.5rem 0;
+        font-weight: 500;
+    }
+
+    & h1 {
+        font-size: 4rem;
+        font-weight: 700;
+    }
+
+    & h2 {
+        margin: 3rem 0;
+        font-weight: 500;
+    }
+}

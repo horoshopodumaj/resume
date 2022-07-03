@@ -1,10 +1,12 @@
 .navbar {
     display: flex;
     align-items: center;
+    justify-content: end;
 
     &__item {
-        font-size: 1rem;
-        font-weight: 500;
+        font-size: 1.3rem;
+        font-weight: 700;
         margin: 1rem 2rem;
+        color: var(--grey-3);
     }
 }
