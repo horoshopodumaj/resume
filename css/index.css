@@ -132,7 +132,10 @@ h6 {
   flex: 1;
 }
 .main__aboutme {
-  margin: 19rem 0;
+  padding: 14rem 0;
+}
+.main__projects {
+  padding: 8rem 0;
 }
 
 .button {
@@ -372,6 +375,10 @@ h6 {
   font-weight: 700;
   text-align: center;
   color: var(--grey-2);
+  padding-bottom: 2rem;
+}
+.projects__box {
+  margin: 3rem 0;
 }
 
 .project {
@@ -386,6 +393,7 @@ h6 {
 }
 .project__body {
   display: flex;
+  align-items: center;
   gap: 2rem;
 }
 .project__img {
@@ -393,8 +401,9 @@ h6 {
 }
 .project__content {
   display: block;
-  padding: 1rem;
+  padding: 2rem 4rem;
   height: 100%;
+  text-align: justify;
 }
 .project__content p {
   font-family: "Lato", sans-serif;

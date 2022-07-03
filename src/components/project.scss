@@ -7,6 +7,11 @@
         font-weight: 700;
         text-align: center;
         color: var(--grey-2);
+        padding-bottom: 2rem;
+    }
+
+    &__box {
+        margin: 3rem 0;
     }
 }
 
@@ -23,6 +28,7 @@
 
     &__body {
         display: flex;
+        align-items: center;
         gap: 2rem;
     }
 
@@ -32,8 +38,9 @@
 
     &__content {
         display: block;
-        padding: 1rem;
+        padding: 2rem 4rem;
         height: 100%;
+        text-align: justify;
 
         & p {
             font-family: $second-font;
