@@ -203,6 +203,10 @@ h6 {
 .project__img {
   height: 100%;
 }
+.project__img img {
+  width: 356px;
+  height: 291px;
+}
 .project__content {
   display: block;
   padding: 2rem 4rem;
