@@ -150,10 +150,70 @@ h6 {
   flex: 1;
 }
 .main__aboutme {
-  padding: 14rem 0;
+  padding: 14rem 0 21rem;
 }
 .main__projects {
-  padding: 8rem 0;
+  padding: 1rem 0;
+}
+
+.footer__links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+.footer__links i {
+  font-size: 2rem;
+  color: var(--yellow);
+}
+.footer__title {
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: center;
+  color: var(--grey-2);
+  padding-bottom: 2rem;
+}
+.footer__contact {
+  font-size: 1.5rem;
+  text-align: center;
+  color: var(--grey-3);
+  font-weight: 500;
+  padding: 4rem 0 27rem;
+}
+.footer__contact p {
+  line-height: 1.2;
+}
+.footer__email {
+  font-size: 1.8rem;
+  padding: 4rem 0;
+  position: relative;
+}
+.footer__email a {
+  color: var(--grey-3);
+  position: relative;
+}
+.footer__email a::after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 3px;
+  background-color: var(--yellow);
+  transform: scaleX(0);
+  width: 100%;
+  top: 100%;
+  left: 0%;
+  transition: transform 250ms ease-in-out;
+  bottom: 0px;
+}
+.footer__email a:hover::after {
+  transform: scaleX(1);
+}
+.footer__basement {
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+  font-weight: 500;
+  text-align: center;
+  width: 100%;
 }
 
 .button {

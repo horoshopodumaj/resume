@@ -9,6 +9,7 @@
             href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
         />
         <link rel="stylesheet" href="./css/index.css" />
+        <link rel="stylesheet" href="./css/all.css" />
         <title>Portfolio</title>
         <script src="./js/wow.min.js"></script>
         <script>
@@ -30,7 +31,7 @@
                             <a href="#project">
                                 <li class="navbar__item">My projects</li>
                             </a>
-                            <a href="#">
+                            <a href="#contactme">
                                 <li class="navbar__item">Contact Me</li>
                             </a>
                             <a href="#">
@@ -51,7 +52,11 @@
             <main class="main">
                 <div class="page__box">
                     <section id="aboutme" class="aboutme main__aboutme">
-                        <img class="aboutme__img" src="./img/1.jpg" alt="" />
+                        <img
+                            class="aboutme__img wow animate__animated animate__backOutLeft"
+                            src="./img/1.jpg"
+                            alt=""
+                        />
                         <div class="aboutme__content">
                             <h2 class="aboutme__title">About me</h2>
                             <div class="aboutme__text">
@@ -180,12 +185,42 @@
             </main>
             <footer class="footer">
                 <div class="page__box">
-                    <section class="footer__contact"></section>
-                    <section class="footer__links"></section>
+                    <section id="contactme" class="footer__contact">
+                        <h2 class="footer__title">Contact me</h2>
+                        <p>
+                            I'm currently looking for opportunities, my inbox is
+                            always open whether for hiring me or just to talk.
+                            I'll answer your email!
+                        </p>
+                        <h3 class="footer__email">
+                            <a href="mailto:dianamurtazina.job@gmail.com">
+                                Let's get in touch</a
+                            >
+                        </h3>
+                    </section>
+                    <section class="footer__links">
+                        <a
+                            href="https://github.com/horoshopodumaj"
+                            target="_blank"
+                        >
+                            <i
+                                class="fa-brands fa-github"
+                                aria-hidden="true"
+                            ></i>
+                        </a>
+                        <a
+                            href="https://www.linkedin.com/in/diana-murtazina-73a0a5243/"
+                            target="_blank"
+                        >
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                    </section>
+                    <section class="footer__basement">
+                        <p>Designed &amp; Built by Diana Murtazina ©2022</p>
+                    </section>
                 </div>
             </footer>
         </div>
-        <!-- <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script> -->
         <script src="https://yastatic.net/jquery/3.3.1/jquery.min.js"></script>
         <script src="./js/typed.min.js"></script>
         <script src="./js/index.js"></script>
