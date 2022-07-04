@@ -4,8 +4,16 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        />
         <link rel="stylesheet" href="./css/index.css" />
         <title>Portfolio</title>
+        <script src="./js/wow.min.js"></script>
+        <script>
+            new WOW().init();
+        </script>
     </head>
     <body>
         <div class="page">
@@ -67,10 +75,14 @@
                                 Reusable component library
                             </h3>
                             <div class="project__body">
-                                <div class="project__img">
+                                <div
+                                    class="project__img wow animate__animated animate__fadeInLeft"
+                                >
                                     <img src="./img/preview_reus.jpg" alt="" />
                                 </div>
-                                <div class="project__content">
+                                <div
+                                    class="project__content wow animate__animated animate__fadeInRight"
+                                >
                                     <p>
                                         The project was completed as part of a
                                         course on modern layout. It is a library
@@ -112,13 +124,17 @@
                         <div class="project projects__box">
                             <h3 class="project__title">Restaurant website</h3>
                             <div class="project__body">
-                                <div class="project__img">
+                                <div
+                                    class="project__img wow animate__animated animate__fadeInLeft"
+                                >
                                     <img
                                         src="./img/preview_bangkok.jpg"
                                         alt=""
                                     />
                                 </div>
-                                <div class="project__content">
+                                <div
+                                    class="project__content wow animate__animated animate__fadeInRight"
+                                >
                                     <p>
                                         Restaurant with online order "Bangkok
                                         Express". The project uses a ready-made
