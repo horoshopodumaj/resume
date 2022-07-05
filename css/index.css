@@ -40,6 +40,7 @@ aside {
 html,
 body {
   font-family: "Montserrat", sans-serif;
+  scroll-behavior: smooth;
   height: 100%;
   width: 100%;
   font-size: 100%;
@@ -214,6 +215,23 @@ h6 {
   font-weight: 500;
   text-align: center;
   width: 100%;
+}
+.footer__up {
+  position: fixed;
+  right: 100px;
+  bottom: 100px;
+}
+.footer__top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 60px;
+  height: 60px;
+}
+.footer__up i {
+  font-size: 1.5rem;
+  color: var(--grey-3);
 }
 
 .button {
