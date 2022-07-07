@@ -2,7 +2,7 @@
 :root {
   --black: #212429;
   --grey: #f8f8ec;
-  --grey-2: #777777;
+  --grey-2: #2c445e;
   --grey-3: #333333;
   --yellow: #d2ae5d;
 }
@@ -144,7 +144,7 @@ h6 {
   font-size: 1.3rem;
   font-weight: 700;
   margin: 1rem 2rem 0.5rem;
-  color: var(--grey-3);
+  color: var(--grey-2);
   position: relative;
   padding-bottom: 0.5rem;
 }
