@@ -21,7 +21,7 @@
             position: absolute;
             top: 100%;
             width: 100%;
-            background-color: black;
+            background-color: var(--grey-2);
             height: 3px;
             transform: scaleX(0);
             transition: transform 250ms ease-in-out;

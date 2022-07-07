@@ -3,10 +3,14 @@
 
     @media screen and (max-width: 425px) {
         flex-direction: column;
+        align-items: center;
     }
 
     &__content {
         padding: 2rem 5rem;
+        @media screen and (max-width: 425px) {
+            padding: 1.5rem 0;
+        }
     }
 
     &__title {
@@ -15,6 +19,10 @@
         text-align: center;
         color: var(--grey-2);
         padding-bottom: 2.5rem;
+        @media screen and (max-width: 425px) {
+            font-size: 2.5rem;
+            padding-bottom: 1.5rem;
+        }
     }
 
     &__text {
@@ -26,7 +34,7 @@
     }
 
     &__img {
-        width: 325px;
+        max-width: 265px;
         height: 350px;
     }
 }

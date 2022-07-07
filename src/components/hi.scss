@@ -27,5 +27,9 @@
     & h2 {
         margin: 3rem 0;
         font-weight: 500;
+
+        @media screen and (max-width: 425px) {
+            font-size: 1rem;
+        }
     }
 }
