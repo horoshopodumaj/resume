@@ -3,9 +3,9 @@
     align-items: center;
     justify-content: end;
 
-    // & a li:hover::after {
-    //     transform: scaleX(1);
-    // }
+    @media screen and (max-width: 425px) {
+        display: none;
+    }
 
     &__item {
         font-size: 1.3rem;

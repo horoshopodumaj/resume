@@ -10,5 +10,9 @@
     &__box {
         max-width: 1100px;
         margin: 0 auto;
+
+        @media screen and (max-width: 1040px) {
+            padding: 0 1rem;
+        }
     }
 }

@@ -1,6 +1,10 @@
 .aboutme {
     display: flex;
 
+    @media screen and (max-width: 425px) {
+        flex-direction: column;
+    }
+
     &__content {
         padding: 2rem 5rem;
     }
