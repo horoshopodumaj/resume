@@ -53,6 +53,10 @@ body {
   -webkit-text-size-adjust: 100%;
 }
 
+body._lock {
+  overflow: hidden;
+}
+
 input,
 button,
 textarea {
@@ -517,12 +521,14 @@ h6 {
     position: fixed;
     top: 0;
     right: 0;
+    left: -100%;
     width: 100vw;
     height: 100vh;
     background-color: var(--grey-2);
-    transform: translateX(-100vw);
-    transition: transform 200ms ease-in-out;
+    opacity: 0.95;
+    transition: left 200ms ease-in-out;
     z-index: 100;
+    overflow: auto;
   }
   .burger-menu__header {
     position: relative;
@@ -546,7 +552,7 @@ h6 {
     background-color: var(--grey-2);
   }
   .burger-menu[data-open] {
-    transform: translateX(0);
+    left: 0;
   }
   .burger-menu__container {
     padding: 0 16px;
