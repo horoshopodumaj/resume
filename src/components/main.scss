@@ -3,6 +3,9 @@
 
     &__aboutme {
         padding: 14rem 0 21rem;
+        @media screen and (max-width: 425px) {
+            padding: 16.5rem 0 2rem;
+        }
     }
 
     &__projects {

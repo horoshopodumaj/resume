@@ -170,6 +170,11 @@ h6 {
 .main__aboutme {
   padding: 14rem 0 21rem;
 }
+@media screen and (max-width: 425px) {
+  .main__aboutme {
+    padding: 16.5rem 0 2rem;
+  }
+}
 .main__projects {
   padding: 1rem 0;
 }
@@ -203,6 +208,12 @@ h6 {
   color: var(--grey-3);
   font-weight: 500;
   padding: 4rem 0 27rem;
+}
+@media screen and (max-width: 425px) {
+  .footer__contact {
+    font-size: 1.3rem;
+    padding: 2rem 0 13rem;
+  }
 }
 .footer__contact p {
   line-height: 1.2;
@@ -313,6 +324,11 @@ h6 {
 }
 .projects__box {
   margin: 3rem 0;
+}
+@media screen and (max-width: 425px) {
+  .projects__box {
+    margin: 0;
+  }
 }
 
 .project {
