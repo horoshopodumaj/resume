@@ -3,7 +3,7 @@
     font-size: 3rem;
     color: var(--grey-3);
 
-    @media screen and (max-width: 425px) {
+    @media screen and (max-width: 619px) {
         font-size: 1.3rem;
     }
 
@@ -11,7 +11,7 @@
         margin: 1.5rem 0;
         font-weight: 500;
 
-        @media screen and (max-width: 425px) {
+        @media screen and (max-width: 619px) {
             margin: 15.5rem 0 1.5rem;
         }
     }
@@ -19,7 +19,7 @@
     & h1 {
         font-size: 4rem;
         font-weight: 700;
-        @media screen and (max-width: 425px) {
+        @media screen and (max-width: 619px) {
             font-size: 2.5rem;
         }
     }
@@ -28,7 +28,7 @@
         margin: 3rem 0;
         font-weight: 500;
 
-        @media screen and (max-width: 425px) {
+        @media screen and (max-width: 619px) {
             font-size: 1rem;
         }
     }

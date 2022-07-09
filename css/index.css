@@ -115,9 +115,10 @@ h6 {
   max-width: 1100px;
   margin: 0 auto;
 }
-@media screen and (max-width: 1040px) {
+@media screen and (max-width: 1132px) {
   .page__box {
     padding: 0 1rem;
+    margin: 0;
   }
 }
 
@@ -127,7 +128,7 @@ h6 {
 .header__hi {
   margin: 15rem 0;
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 619px) {
   .header__hi {
     margin: 1rem 0;
     padding-top: 1.5rem;
@@ -138,8 +139,9 @@ h6 {
   display: flex;
   align-items: center;
   justify-content: end;
+  text-align: center;
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 620px) {
   .navbar {
     display: none;
   }
@@ -151,6 +153,11 @@ h6 {
   color: var(--grey-2);
   position: relative;
   padding-bottom: 0.5rem;
+}
+@media screen and (min-width: 621px) and (max-width: 700px) {
+  .navbar__item {
+    margin: 1rem 1rem 0.5rem;
+  }
 }
 .navbar__item:after {
   content: "";
@@ -174,7 +181,7 @@ h6 {
 .main__aboutme {
   padding: 14rem 0 21rem;
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 619px) {
   .main__aboutme {
     padding: 0;
     margin: 16.5rem 0 2rem;
@@ -201,7 +208,7 @@ h6 {
   color: var(--grey-2);
   padding-bottom: 2rem;
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 619px) {
   .footer__title {
     font-size: 2.5rem;
     padding-bottom: 1.5rem;
@@ -214,7 +221,7 @@ h6 {
   font-weight: 500;
   padding: 4rem 0 27rem;
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 619px) {
   .footer__contact {
     font-size: 1.3rem;
     padding: 2rem 0 13rem;
@@ -260,7 +267,7 @@ h6 {
   right: 100px;
   bottom: 100px;
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 619px) {
   .footer__up {
     right: 50px;
     bottom: 50px;
@@ -275,7 +282,7 @@ h6 {
   height: 45px;
   background-color: var(--yellow);
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 619px) {
   .footer__top {
     width: 30px;
     height: 30px;
@@ -285,7 +292,7 @@ h6 {
   font-size: 1.5rem;
   color: var(--grey-3);
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 619px) {
   .footer__up i {
     font-size: 1rem;
   }
@@ -304,7 +311,7 @@ h6 {
   position: relative;
   background-color: var(--yellow);
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 619px) {
   .button {
     width: 100%;
   }
@@ -321,7 +328,7 @@ h6 {
   color: var(--grey-2);
   padding-bottom: 2rem;
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 619px) {
   .projects__title {
     font-size: 2.5rem;
     padding-bottom: 1.5rem;
@@ -330,7 +337,7 @@ h6 {
 .projects__box {
   margin: 3rem 0;
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 619px) {
   .projects__box {
     margin: 0;
   }
@@ -346,7 +353,7 @@ h6 {
   padding: 2rem 2rem 2rem 0;
   color: var(--grey-3);
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 619px) {
   .project__title {
     font-size: 1.6rem;
     padding: 1.7rem 0;
@@ -358,7 +365,7 @@ h6 {
   align-items: center;
   gap: 2rem;
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 619px) {
   .project__body {
     flex-direction: column;
   }
@@ -367,11 +374,16 @@ h6 {
   height: 100%;
   flex: 0 0 35%;
 }
+@media screen and (max-width: 980px) and (min-width: 620px) {
+  .project__img {
+    flex: 0 0 50%;
+  }
+}
 .project__img img {
   max-width: 100%;
   height: 291px;
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 619px) {
   .project__img img {
     max-width: 100%;
     height: 260px;
@@ -383,9 +395,14 @@ h6 {
   height: 100%;
   text-align: justify;
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 619px) {
   .project__content {
     padding: 1.5rem 0;
+  }
+}
+@media screen and (max-width: 980px) and (min-width: 620px) {
+  .project__content {
+    padding: 0;
   }
 }
 .project__content p {
@@ -399,7 +416,7 @@ h6 {
   padding: 1rem 1rem 1rem 0;
   gap: 1.2rem;
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 619px) {
   .project__buttons {
     padding: 1rem 0;
     justify-content: center;
@@ -439,32 +456,46 @@ h6 {
 }
 .aboutme {
   display: flex;
+  align-items: center;
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 619px) {
   .aboutme {
     flex-direction: column;
-    align-items: center;
   }
 }
 .aboutme__content {
-  padding: 2rem 5rem;
+  padding: 0 1rem;
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 619px) {
   .aboutme__content {
     padding: 1.5rem 0;
   }
 }
+@media screen and (min-width: 769px) {
+  .aboutme__content {
+    padding: 2rem 5rem;
+  }
+}
 .aboutme__title {
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 700;
   text-align: center;
   color: var(--grey-2);
-  padding-bottom: 2.5rem;
+  padding-bottom: 0.5rem;
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 619px) {
   .aboutme__title {
     font-size: 2.5rem;
     padding-bottom: 1.5rem;
+  }
+}
+@media screen and (min-width: 769px) {
+  .aboutme__title {
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+    color: var(--grey-2);
+    padding-bottom: 2.5rem;
   }
 }
 .aboutme__text {
@@ -484,7 +515,7 @@ h6 {
   font-size: 3rem;
   color: var(--grey-3);
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 619px) {
   .hi {
     font-size: 1.3rem;
   }
@@ -493,7 +524,7 @@ h6 {
   margin: 1.5rem 0;
   font-weight: 500;
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 619px) {
   .hi p {
     margin: 15.5rem 0 1.5rem;
   }
@@ -502,7 +533,7 @@ h6 {
   font-size: 4rem;
   font-weight: 700;
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 619px) {
   .hi h1 {
     font-size: 2.5rem;
   }
@@ -511,13 +542,13 @@ h6 {
   margin: 3rem 0;
   font-weight: 500;
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 619px) {
   .hi h2 {
     font-size: 1rem;
   }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 619px) {
   .burger-menu {
     position: fixed;
     top: 0;
@@ -588,7 +619,7 @@ h6 {
     color: var(--black);
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 619px) {
   .burger-menu {
     display: none;
   }
