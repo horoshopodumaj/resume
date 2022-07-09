@@ -525,7 +525,7 @@ h6 {
     width: 100vw;
     height: 100vh;
     background-color: var(--grey-2);
-    opacity: 0.95;
+    opacity: 0.99;
     transition: left 200ms ease-in-out;
     z-index: 100;
     overflow: auto;
@@ -543,13 +543,17 @@ h6 {
     stroke: var(--black);
   }
   .burger-menu__close-btn {
-    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 0;
     border: 0;
     position: absolute;
-    height: 32px;
-    width: 32px;
-    background-color: var(--grey-2);
+    height: 28px;
+    width: 28px;
+    background-color: var(--yellow);
+    top: 1rem;
+    left: 1rem;
   }
   .burger-menu[data-open] {
     left: 0;
@@ -559,12 +563,12 @@ h6 {
   }
   .burger-menu__menu {
     width: 100%;
-    margin-top: 28px;
+    margin-top: 4.5rem;
   }
   .burger-menu__menu a {
     font-family: "Inter", sans-serif;
     font-weight: 400;
-    color: var(--black);
+    color: var(--yellow);
     text-decoration: none;
   }
   .burger-menu__main {
@@ -572,7 +576,7 @@ h6 {
     flex-direction: column;
     gap: 16px;
     font-family: "Inter", sans-serif;
-    font-size: 16px;
+    font-size: 1.5rem;
     line-height: 157%;
   }
   .burger-menu__head {
