@@ -176,7 +176,8 @@ h6 {
 }
 @media screen and (max-width: 425px) {
   .main__aboutme {
-    padding: 16.5rem 0 2rem;
+    padding: 0;
+    margin: 16.5rem 0 2rem;
   }
 }
 .main__projects {
