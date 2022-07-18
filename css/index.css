@@ -5,6 +5,7 @@
   --grey-2: #2c445e;
   --grey-3: #333333;
   --yellow: #d2ae5d;
+  --yellow-2: #d2ae5d3d;
 }
 
 * {
@@ -145,6 +146,14 @@ h6 {
   .navbar {
     display: none;
   }
+}
+.navbar__lang {
+  border: 2px solid var(--grey-2);
+  height: 30px;
+  width: 70px;
+  background-color: var(--yellow-2);
+  color: var(--grey-2);
+  font-weight: 600;
 }
 .navbar__item {
   font-size: 1.3rem;
