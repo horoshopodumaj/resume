@@ -98,25 +98,33 @@
                     <nav>
                         <ul class="navbar header__nav">
                             <a href="#home">
-                                <li class="navbar__item">Home</li>
+                                <li class="navbar__item lng-home">Home</li>
                             </a>
                             <a href="#aboutme">
-                                <li class="navbar__item">About me</li>
+                                <li class="navbar__item lng-about">About me</li>
                             </a>
                             <a href="#project">
-                                <li class="navbar__item">My projects</li>
+                                <li class="navbar__item lng-projects">
+                                    My projects
+                                </li>
                             </a>
                             <a href="#contactme">
-                                <li class="navbar__item">Contact Me</li>
+                                <li class="navbar__item lng-contact">
+                                    Contact Me
+                                </li>
                             </a>
                             <a href="#">
-                                <li class="navbar__item">Resume</li>
+                                <li class="navbar__item lng-resume">Resume</li>
                             </a>
+                            <select name="#" id="#" class="navbar__lang">
+                                <option value="ru">RU</option>
+                                <option value="en" selected>EN</option>
+                            </select>
                         </ul>
                     </nav>
                     <div class="hi header__hi">
-                        <p>Hi, my name is</p>
-                        <h1>Diana Murtazina</h1>
+                        <p class="lng-hi">Hi, my name is</p>
+                        <h1 class="lng-name">Diana Murtazina</h1>
                         <h2>
                             I am
                             <span class="element"></span>
@@ -133,8 +141,8 @@
                             alt=""
                         />
                         <div class="aboutme__content">
-                            <h2 class="aboutme__title">About me</h2>
-                            <div class="aboutme__text">
+                            <h2 class="aboutme__title lng-aboutme">About me</h2>
+                            <div class="aboutme__text lng-aboutmetext">
                                 Hi, my name is Diana Murtazina and I am novice
                                 front-end developer who is building a new career
                                 from the thing I really enjoy. For several
@@ -143,15 +151,18 @@
                                 algorithms and data structures, while
                                 simultaneously working as a head of direction in
                                 the department of physical protection of land
-                                and sea objects. Now I'm studying React using
-                                Redux.
+                                and sea objects. Now I'm studying React.
                             </div>
                         </div>
                     </section>
                     <section id="project" class="projects main__projects">
-                        <h2 class="projects__title">My projects</h2>
+                        <h2 class="projects__title lng-myprojects">
+                            My projects
+                        </h2>
                         <div class="project projects__box">
-                            <h3 class="project__title">Landing page layout</h3>
+                            <h3 class="project__title lng-landing">
+                                Landing page layout
+                            </h3>
                             <div class="project__body">
                                 <div
                                     class="project__img wow animate__animated animate__fadeInLeft"
@@ -161,10 +172,12 @@
                                 <div
                                     class="project__content wow animate__animated animate__fadeInRight"
                                 >
-                                    <p>
+                                    <p class="lng-landingtext">
                                         Layout of the landing site according to
                                         the layout for a language school. The
-                                        project uses BEM, scss, postcss.
+                                        project uses BEM, scss, postcss. Images
+                                        in the project are inserted from
+                                        svg-sprite.
                                     </p>
                                     <div class="project__buttons">
                                         <form
@@ -192,7 +205,7 @@
                             </div>
                         </div>
                         <div class="project projects__box">
-                            <h3 class="project__title">
+                            <h3 class="project__title lng-reus">
                                 Reusable component library
                             </h3>
                             <div class="project__body">
@@ -204,7 +217,7 @@
                                 <div
                                     class="project__content wow animate__animated animate__fadeInRight"
                                 >
-                                    <p>
+                                    <p class="lng-reustext">
                                         The project was completed as part of a
                                         course on modern layout. It is a library
                                         of reusable components, such as a modal
@@ -243,7 +256,9 @@
                             </div>
                         </div>
                         <div class="project projects__box">
-                            <h3 class="project__title">Restaurant website</h3>
+                            <h3 class="project__title lng-restaurant">
+                                Restaurant website
+                            </h3>
                             <div class="project__body">
                                 <div
                                     class="project__img wow animate__animated animate__fadeInLeft"
@@ -256,7 +271,7 @@
                                 <div
                                     class="project__content wow animate__animated animate__fadeInRight"
                                 >
-                                    <p>
+                                    <p class="lng-restauranttext">
                                         Restaurant with online order "Bangkok
                                         Express". The project uses a ready-made
                                         layout. The use of javascript in the
@@ -302,14 +317,17 @@
             <footer class="footer">
                 <div class="page__box">
                     <section id="contactme" class="footer__contact">
-                        <h2 class="footer__title">Contact me</h2>
-                        <p>
+                        <h2 class="footer__title lng-contactme">Contact me</h2>
+                        <p class="lng-opportunities">
                             I'm currently looking for opportunities, my inbox is
                             always open whether for hiring me or just to talk.
                             I'll answer your email!
                         </p>
                         <h3 class="footer__email">
-                            <a href="mailto:dianamurtazina.job@gmail.com">
+                            <a
+                                href="mailto:dianamurtazina.job@gmail.com"
+                                class="lng-writeforme"
+                            >
                                 Let's get in touch</a
                             >
                         </h3>
@@ -345,5 +363,7 @@
         <script src="https://yastatic.net/jquery/3.3.1/jquery.min.js"></script>
         <script src="./js/typed.min.js"></script>
         <script src="./js/index.js"></script>
+        <script src="./js/lang.js"></script>
+        <script src="./js/app.js"></script>
     </body>
 </html>
