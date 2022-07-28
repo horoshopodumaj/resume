@@ -423,6 +423,10 @@ h6 {
 .project__button {
   font-family: "Montserrat", sans-serif;
 }
+.project__button:disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
 
 .typed-cursor {
   opacity: 1;
