@@ -16,11 +16,6 @@ const langArr = {
         en: "Contact me",
     },
 
-    resume: {
-        ru: "Резюме",
-        en: "Resume",
-    },
-
     hi: {
         ru: "Привет, меня зовут",
         en: "Hi, my name is",
