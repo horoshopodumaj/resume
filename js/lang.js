@@ -134,12 +134,12 @@ const langArr = {
     },
 
     reactproject: {
-        ru: "Сервис выбора ресторана и заказа еды",
-        en: "Restaurant selection and food ordering service",
+        ru: "Социальная сеть",
+        en: "Social network",
     },
 
     reactprojecttext: {
-        ru: "Здесь будет сервис выбора ресторана и заказа еды, написанный на React. А пока вы можете посетить мой GitHub и посмотреть за тем, как я изучаю  React.",
-        en: "There will be a service for choosing a restaurant and ordering food, written in React. In the meantime, you can visit my GitHub and watch me learn React.",
+        ru: "Здесь будет социальная сеть, написанная на React с применением библиотеки Redux. А пока вы можете посетить мой GitHub и посмотреть за тем, как я изучаю  React.",
+        en: "There will be a social network written in React using the Redux library. In the meantime, you can visit my GitHub and watch me learn React.",
     },
 };
