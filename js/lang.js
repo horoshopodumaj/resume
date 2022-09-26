@@ -32,14 +32,14 @@ const langArr = {
     aboutmetext: {
         ru: `Привет, меня зовут Муртазина Диана и я только начинаю свою
         карьеру front-end разработчика. В течении нескольких месяцев я
-        изучала HTML, CSS, JavaScript, алгоритмы и структуры данных, совмещая учебу
+        изучала HTML, CSS, JavaScript, jQuery, алгоритмы и структуры данных, совмещая учебу
         и работу руководителем направления в отделе физической защиты наземных и 
         морских объектов. На данный момент я изучаю React.`,
         en: `Hi, my name is Diana Murtazina and I am novice
         front-end developer who is building a new career
         from the thing I really enjoy. For several
         months, I have been honing my web developer
-        skills by studying HTML, CSS, JavaScript,
+        skills by studying HTML, CSS, JavaScript, jQuery,
         algorithms and data structures, while
         simultaneously working as a head of direction in
         the department of physical protection of land
@@ -62,6 +62,17 @@ const langArr = {
         en: `Layout of the landing site according to
         the layout for a language school. The
         project uses BEM, scss, postcss. Images in the project are inserted from svg-sprite.`,
+    },
+    shop: {
+        ru: "Верстка лендинга",
+        en: "Landing page layout",
+    },
+
+    shoptext: {
+        ru: `Верстка лендинга для магазина косметики. Сайт сверстан с применением методологии БЭМ.`,
+        en: `Layout of a landing page for a cosmetics
+        store. The site is checked using the BEM
+        methodology.`,
     },
 
     reus: {
