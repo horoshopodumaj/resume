@@ -153,4 +153,14 @@ const langArr = {
         ru: "Здесь будет социальная сеть, написанная на React с применением библиотеки Redux. А пока вы можете посетить мой GitHub и посмотреть за тем, как я изучаю  React.",
         en: "There will be a social network written in React using the Redux library. In the meantime, you can visit my GitHub and watch me learn React.",
     },
+
+    mebel: {
+        ru: "Мебельный магазин",
+        en: "Furniture store",
+    },
+
+    mebeltext: {
+        ru: "Здесь будет сайт мебельного магазина, написанный на React. Сайт находится в процессе разработки, но уже сейчас вы можете понаблюдать над его созданием.",
+        en: "There will be a furniture store website written in React. The site is under development, but already now you can watch its creation.",
+    },
 };
