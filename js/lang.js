@@ -160,7 +160,7 @@ const langArr = {
     },
 
     mebeltext: {
-        ru: "Здесь будет сайт мебельного магазина, написанный на React. Сайт находится в процессе разработки, но уже сейчас вы можете понаблюдать над его созданием.",
-        en: "There will be a furniture store website written in React. The site is under development, but already now you can watch its creation.",
+        ru: "Сайт мебельного магазина с возможностью добавления товаров в корзину, сортировкой по категориям товаров, управлением количеством товара из корзины. При нажатии на картинку товара появляется модальное окно с карточкой товара. Сайт не адаптивный, возможно пока.",
+        en: "The website of a furniture store with the ability to add products to the basket, sort by product categories, manage the quantity of goods from the basket. When you click on the product image, a modal window with a product card appears. The site is not adaptive, perhaps not yet.",
     },
 };
