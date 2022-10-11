@@ -59,7 +59,8 @@
     &__content {
         display: block;
         padding: 2rem 4rem;
-        height: 100%;
+        height: auto;
+        width: 100%;
         text-align: justify;
         @media screen and (max-width: 619px) {
             padding: 1.5rem 0;
