@@ -387,9 +387,9 @@ h6 {
 .project__content {
   display: block;
   padding: 2rem 4rem;
-  height: auto;
-  width: 100%;
+  height: 100%;
   text-align: justify;
+  overflow: hidden;
 }
 @media screen and (max-width: 619px) {
   .project__content {
@@ -427,6 +427,28 @@ h6 {
 .project__button:disabled {
   opacity: 0.5;
   pointer-events: none;
+}
+
+._anim-show {
+  transform: translate(0px, 50%);
+  opacity: 0;
+  transition: all 1.2s ease 0s;
+}
+
+._anim-show-img {
+  transform: scale(0);
+  transition: all 2s ease 0s;
+}
+
+._anim-show._active,
+._active ._anim-show {
+  transform: translate(0px, 0px);
+  opacity: 1;
+}
+
+._anim-show-img._active,
+._active ._anim-show-img {
+  transform: scale(1);
 }
 
 .typed-cursor {
