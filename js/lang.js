@@ -30,20 +30,18 @@ const langArr = {
         en: "About me",
     },
     aboutmetext: {
-        ru: `Привет, меня зовут Муртазина Диана и я только начинаю свою
-        карьеру front-end разработчика. В течении нескольких месяцев я
-        изучала HTML, CSS, JavaScript, jQuery, алгоритмы и структуры данных, совмещая учебу
-        и работу руководителем направления в отделе физической защиты наземных и 
-        морских объектов. На данный момент я изучаю React.`,
-        en: `Hi, my name is Diana Murtazina and I am novice
-        front-end developer who is building a new career
-        from the thing I really enjoy. For several
-        months, I have been honing my web developer
-        skills by studying HTML, CSS, JavaScript, jQuery,
-        algorithms and data structures, while
-        simultaneously working as a head of direction in
-        the department of physical protection of land
-        and sea objects. Now I'm studying React.`,
+        ru: `Привет, меня зовут Муртазина Диана и я front-end разработчик.<br /> Мои навыки:
+        <br />- HTML,
+        <br />- CSS (SCSS, БЭМ, flex, grid),
+        <br />- JavaScript,
+        <br />- jQuery,
+        <br />- React.
+        `,
+        en: `Hi, my name is Diana Murtazina and I am a
+        front-end developer.<br />
+        My skills: <br />- HTML, <br />- CSS (SCSS, BEM,
+        flex, grid), <br />- JavaScript, <br />- jQuery,
+        <br />- React.`,
     },
 
     myprojects: {
