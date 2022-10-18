@@ -640,6 +640,12 @@ h6 {
     font-weight: 400;
     color: var(--black);
   }
+  .burger-menu__lang {
+    position: absolute;
+    top: 15px;
+    right: 1rem;
+    background-color: var(--yellow);
+  }
 }
 @media screen and (min-width: 619px) {
   .burger-menu {
