@@ -436,7 +436,8 @@ h6 {
 }
 
 ._anim-show-img {
-  transform: scale(0);
+  transform: translate(0px, -30%);
+  opacity: 0;
   transition: all 2s ease 0s;
 }
 
@@ -448,7 +449,8 @@ h6 {
 
 ._anim-show-img._active,
 ._active ._anim-show-img {
-  transform: scale(1);
+  transform: translate(0px, 0px);
+  opacity: 1;
 }
 
 .typed-cursor {
