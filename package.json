@@ -27,6 +27,7 @@
         "sass": "^1.53.0"
     },
     "dependencies": {
+        "gsap": "^3.11.3",
         "typed.js": "^2.0.12"
     }
 }
