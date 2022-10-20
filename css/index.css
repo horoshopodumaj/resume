@@ -143,6 +143,13 @@ h6 {
                 transform: scale(0);
     }
 
+@media screen and (max-width: 1023px) {
+
+#cursor {
+        display: none
+}
+    }
+
 #aura {
     width: 46px;
     height: 46px;
@@ -158,6 +165,13 @@ h6 {
         -webkit-transform: scale(1.3);
             -ms-transform: scale(1.3);
                 transform: scale(1.3);
+    }
+
+@media screen and (max-width: 1023px) {
+
+#aura {
+        display: none
+}
     }
 
 #aura.hidden,
