@@ -73,6 +73,20 @@ const langArr = {
         methodology.`,
     },
 
+    sneaker: {
+        ru: "Магазин кроссовок",
+        en: "A Sneaker Store",
+    },
+
+    sneakertext: {
+        ru: `Магазин кроссовок с использованием mockAPI реализован на React. Реализовано добавление товара в корзину, закладки. Реализован поиск товаров по сайту. Список товаров, товары в корзине, закладки загружается с сервера. На главной странице отображены товары уже добавленные в корзину и закладки.
+        Реализована отправка заказа на сервер, список заказанных товаров подгружается с сервера и отображается на отдельной странице. 
+         Общая сумма товаров в корзине выведена на главную страницу и отображается в корзине.`,
+        en: `The sneaker store using mockAPI is implemented on React. Implemented the addition of goods to the cart, bookmarks. Implemented a search for products on the site. The list of products, products in the basket, bookmarks is loaded from the server. The main page displays products already added to the cart and bookmarks.
+        The order has been sent to the server, the list of ordered goods is loaded from the server and displayed on a separate page.
+        The total amount of goods in the basket is displayed on the main page and displayed in the basket.`,
+    },
+
     reus: {
         ru: "Библиотека переиспользуемых компонентов",
         en: "Reusable component library",
