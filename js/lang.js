@@ -63,7 +63,7 @@ const langArr = {
     },
     shop: {
         ru: "Верстка лендинга",
-        en: "Landing page layout",
+        en: "Landing Page Layout",
     },
 
     shoptext: {
@@ -75,7 +75,7 @@ const langArr = {
 
     sneaker: {
         ru: "Магазин кроссовок",
-        en: "A Sneaker Store",
+        en: "Sneaker Store",
     },
 
     sneakertext: {
@@ -89,7 +89,7 @@ const langArr = {
 
     reus: {
         ru: "Библиотека переиспользуемых компонентов",
-        en: "Reusable component library",
+        en: "Reusable Component Library",
     },
 
     reustext: {
@@ -113,7 +113,7 @@ const langArr = {
 
     restaurant: {
         ru: "Сайт ресторана",
-        en: "Restaurant website",
+        en: "Restaurant Website",
     },
 
     restauranttext: {
@@ -158,7 +158,7 @@ const langArr = {
 
     reactproject: {
         ru: "Социальная сеть",
-        en: "Social network",
+        en: "Social Network",
     },
 
     reactprojecttext: {
@@ -168,7 +168,7 @@ const langArr = {
 
     mebel: {
         ru: "Мебельный магазин",
-        en: "Furniture store",
+        en: "Furniture Store",
     },
 
     mebeltext: {
@@ -178,7 +178,7 @@ const langArr = {
 
     leasing: {
         ru: "Калькулятор лизинга автомобилей",
-        en: "A car leasing calculator ",
+        en: "Car Leasing Calculator ",
     },
 
     leasingText: {
