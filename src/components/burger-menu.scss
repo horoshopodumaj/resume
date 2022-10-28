@@ -6,7 +6,7 @@
         left: -100%;
         width: 100vw;
         height: 100vh;
-        background-color: var(--grey-2);
+        background-color: var(--white);
         opacity: 0.99;
         transition: left 200ms ease-in-out;
         z-index: 100;
@@ -23,7 +23,7 @@
             position: absolute;
 
             svg {
-                stroke: var(--black);
+                stroke: var(--grey-3);
             }
         }
 
@@ -36,9 +36,13 @@
             position: absolute;
             height: 28px;
             width: 28px;
-            background-color: var(--yellow);
+            background-color: var(--white);
             top: 1rem;
             left: 1rem;
+
+            svg {
+                stroke: var(--grey-3);
+            }
         }
         &[data-open] {
             left: 0;
@@ -55,7 +59,7 @@
             a {
                 font-family: "Inter", sans-serif;
                 font-weight: 400;
-                color: var(--yellow);
+                color: var(--grey-2);
                 text-decoration: none;
             }
         }
@@ -81,7 +85,6 @@
             position: absolute;
             top: 15px;
             right: 1rem;
-            background-color: var(--yellow);
         }
     }
 

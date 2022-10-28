@@ -6,10 +6,11 @@ $second-font: "Lato", sans-serif;
 :root {
     --black: #212429;
     --grey: #f8f8ec;
-    --grey-2: #2c445e;
-    --grey-3: #333333;
-    --yellow: #d2ae5d;
+    --grey-2: #376bf0;
+    --grey-3: #223289;
+    --yellow: #8aa6ef;
     --yellow-2: #d2ae5d3d;
+    --white: #fff;
 }
 
 * {
@@ -46,15 +47,9 @@ html,
 body {
     font-family: $main-front;
     scroll-behavior: smooth;
-    height: 100%;
     width: 100%;
-    font-size: 100%;
     line-height: 1;
     font-size: 16px;
-    background-color: var(--grey);
-    -ms-text-size-adjust: 100%;
-    -moz-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%;
 }
 
 body._lock {
