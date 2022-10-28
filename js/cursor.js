@@ -2,6 +2,7 @@ let mouseX, mouseY, posX, posY, clientX, clientY;
 
 document.addEventListener("DOMContentLoaded", () => {
     const body = document.querySelector("body");
+    const header = document.querySelector(".header");
     body.addEventListener("mousemove", (e) => {
         clientX = e.pageX;
         clientY = e.pageY;
@@ -53,6 +54,13 @@ document.addEventListener("DOMContentLoaded", () => {
             follower.classList.remove("active");
         });
     }
+
+    header.addEventListener("mousemove", () => {
+        cursor.classList.add("cursor_header");
+    });
+    header.addEventListener("mouseout", () => {
+        cursor.classList.remove("cursor_header");
+    });
 
     body.addEventListener("mouseout", () => {
         cursor.classList.add("hidden");

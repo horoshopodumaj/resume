@@ -119,6 +119,9 @@ h6 {
     @media screen and (max-width: 1023px) {
         display: none;
     }
+    &.cursor_header {
+        background-color: var(--white);
+    }
 }
 
 #aura {

@@ -124,6 +124,9 @@ h6 {
     display: none;
   }
 }
+#cursor.cursor_header {
+  background-color: var(--white);
+}
 
 #aura {
   width: 46px;
@@ -171,6 +174,10 @@ h6 {
   }
 }
 
+.header {
+  background-color: var(--grey-2);
+  border-radius: 20px 20px 0 0;
+}
 .header__nav {
   margin-bottom: 2rem;
   margin-top: 1rem;
@@ -207,7 +214,7 @@ h6 {
   font-size: 1.3rem;
   font-weight: 700;
   margin: 1rem 2rem 0.5rem;
-  color: var(--grey-2);
+  color: var(--white);
   position: relative;
   padding-bottom: 0.5rem;
 }
@@ -586,7 +593,7 @@ h6 {
 .hi {
   height: 50%;
   font-size: 3rem;
-  color: var(--grey-3);
+  color: var(--white);
 }
 @media screen and (max-width: 619px) {
   .hi {
