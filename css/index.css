@@ -667,7 +667,8 @@ h6 {
     padding: 0;
     border: 0;
     background-color: inherit;
-    position: absolute;
+    position: fixed;
+    z-index: 99;
   }
   .burger-menu__open-btn svg {
     stroke: var(--grey-3);
