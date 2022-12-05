@@ -51,7 +51,7 @@ const langArr = {
 
     landing: {
         ru: "Верстка лендинга",
-        en: "Landing page layout",
+        en: "Landing Page Layout",
     },
 
     landingtext: {
@@ -62,15 +62,13 @@ const langArr = {
         project uses BEM, scss, postcss. Images in the project are inserted from svg-sprite.`,
     },
     shop: {
-        ru: "Верстка лендинга",
-        en: "Landing Page Layout",
+        ru: "Сайт для путешествий в Индонезию",
+        en: "Website For Travel To Indonesia",
     },
 
     shoptext: {
-        ru: `Верстка лендинга для магазина косметики. Сайт сверстан с применением методологии БЭМ.`,
-        en: `Layout of a landing page for a cosmetics
-        store. The site is checked using the BEM
-        methodology.`,
+        ru: `Верстка сайт для путешествий в Индонезию. На сайте реализовано бургер  меню, галерея на чистом Javascript. Верстка адаптивная. `,
+        en: `Layout of a website for traveling to Indonesia. The site has implemented a burger menu, a gallery in pure Javascript. The layout is adaptive.`,
     },
 
     sneaker: {
