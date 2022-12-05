@@ -176,12 +176,6 @@ h6 {
 
 .header {
   background-color: var(--grey-2);
-  border-radius: 20px 20px 0 0;
-}
-@media screen and (max-width: 1099px) {
-  .header {
-    border-radius: 0;
-  }
 }
 .header__nav {
   margin-bottom: 2rem;
@@ -197,11 +191,30 @@ h6 {
   }
 }
 
+.navbar_sticky {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: var(--grey-2);
+  border-radius: 20px 20px 0 0;
+  z-index: 999;
+  padding-right: 20px;
+}
+@media screen and (max-width: 1099px) {
+  .navbar_sticky {
+    border-radius: 0;
+  }
+}
+
 .navbar {
   display: flex;
   align-items: center;
   justify-content: flex-end;
   text-align: center;
+}
+.navbar_scrolled {
+  background: rgba(55, 107, 240, 0.6);
+  border-radius: 0;
 }
 @media screen and (max-width: 620px) {
   .navbar {
