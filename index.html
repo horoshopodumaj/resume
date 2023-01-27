@@ -135,43 +135,13 @@
                             <div class="aboutme__text lng-aboutmetext">
                                 Hi, my name is Diana Murtazina and I am a front-end developer.<br />
                                 My skills: <br />- HTML, <br />- CSS (SCSS, BEM, flex, grid),
-                                <br />- JavaScript, <br />- jQuery, <br />- React.
+                                <br />- MUI, <br />- JavaScript, <br />- jQuery, <br />- React,
+                                <br />- Redux Toolkit.
                             </div>
                         </div>
                     </section>
                     <section id="project" class="projects main__projects">
                         <h2 class="projects__title lng-myprojects">My projects</h2>
-                        <div class="project projects__box">
-                            <h3 class="project__title lng-landing">Landing Page Layout</h3>
-                            <div class="project__body">
-                                <div class="project__img _anim-items _anim-no-hide">
-                                    <img class="_anim-show-img" src="./img/britlex.jpg" alt="" />
-                                </div>
-                                <div class="project__content _anim-items _anim-no-hide">
-                                    <p class="lng-landingtext _anim-show">
-                                        Layout of the landing site according to the layout for a
-                                        language school. The project uses BEM, scss, postcss. Images
-                                        in the project are inserted from svg-sprite.
-                                    </p>
-                                    <div class="project__buttons">
-                                        <form
-                                            action="https://github.com/horoshopodumaj/britlexLanding"
-                                            target="_blank"
-                                        >
-                                            <button class="button project__button">GitHub</button>
-                                        </form>
-                                        <form
-                                            action="https://britlex-landing.vercel.app/"
-                                            target="_blank"
-                                        >
-                                            <button class="button project__button">
-                                                Live site
-                                            </button>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                         <div class="project projects__box">
                             <h3 class="project__title lng-shop">Website For Travel To Indonesia</h3>
                             <div class="project__body">
@@ -204,6 +174,38 @@
                             </div>
                         </div>
                         <div class="project projects__box">
+                            <h3 class="project__title lng-landing">Landing Page Layout</h3>
+                            <div class="project__body">
+                                <div class="project__img _anim-items _anim-no-hide">
+                                    <img class="_anim-show-img" src="./img/sup.jpg" alt="" />
+                                </div>
+                                <div class="project__content _anim-items _anim-no-hide">
+                                    <p class="lng-suptext _anim-show">
+                                        Layout of a beautiful adaptive landing page for sale of sup
+                                        board. The landing page contains two galleries of images
+                                        with an unusual design. Grids were used in the layout. Gulp
+                                        was used when building the project.
+                                    </p>
+                                    <div class="project__buttons">
+                                        <form
+                                            action="https://github.com/horoshopodumaj/sup"
+                                            target="_blank"
+                                        >
+                                            <button class="button project__button">GitHub</button>
+                                        </form>
+                                        <form
+                                            action="https://sup-nu-ten.vercel.app/"
+                                            target="_blank"
+                                        >
+                                            <button class="button project__button">
+                                                Live site
+                                            </button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="project projects__box">
                             <h3 class="project__title lng-reus">Reusable Component Library</h3>
                             <div class="project__body">
                                 <div class="project__img _anim-items _anim-no-hide">
@@ -241,8 +243,8 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="project projects__box">
+                        </div> -->
+                        <!-- <div class="project projects__box">
                             <h3 class="project__title lng-restaurant">Restaurant Website</h3>
                             <div class="project__body">
                                 <div class="project__img _anim-items _anim-no-hide">
@@ -282,8 +284,8 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="project projects__box">
+                        </div> -->
+                        <!-- <div class="project projects__box">
                             <h3 class="project__title lng-mebel">Furniture Store</h3>
                             <div class="project__body">
                                 <div class="project__img _anim-items _anim-no-hide">
@@ -315,8 +317,8 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="project projects__box">
+                        </div> -->
+                        <!-- <div class="project projects__box">
                             <h3 class="project__title lng-sneaker">Sneaker Store</h3>
                             <div class="project__body">
                                 <div class="project__img _anim-items _anim-no-hide">
@@ -353,8 +355,59 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                         <div class="project projects__box">
+                            <h3 class="project__title lng-recommend">
+                                Application for reviews of books, movies, games, etc.
+                            </h3>
+                            <div class="project__body">
+                                <div class="project__img _anim-items _anim-no-hide">
+                                    <img src="./img/recommend.jpg" alt="" class="_anim-show-img" />
+                                </div>
+                                <div class="project__content _anim-items _anim-no-hide">
+                                    <p class="lng-recommendtext _anim-show">
+                                        The site is written in React, Node.js, Express, Postgresql,
+                                        Sequelize ORM library is used to work with this database.
+                                        The Redux Toolkit is used as a state manager, queries to the
+                                        database go through createAsyncThunk and RTK Query. Used for
+                                        registration passport.js. Components from the MUI library
+                                        are used for styling. Images used in reviews are stored in
+                                        the Cloudinary cloud. Site visitors see all reviews,
+                                        comments, likes. Only registered users can write a review,
+                                        comments, rate the review itself with a like or give a
+                                        rating to the content described in the review. Categories of
+                                        reviews, can only be added by the administrator. The
+                                        administrator sees a list of all users, can go to their page
+                                        and edit the review. You can register in the application
+                                        using Google, Twitter, GitHub accounts. Each user has their
+                                        own page where they can view their reviews and edit them.
+                                        The main page displays the latest added reviews, reviews
+                                        with the highest rating that the author put and the tag
+                                        cloud. The site is bilingual (Russian and English). The
+                                        profile header is sticky, the site is adaptive, there is a
+                                        burger menu. While waiting for responses from the server,
+                                        skeletons are displayed.
+                                    </p>
+                                    <div class="project__buttons">
+                                        <form
+                                            action="https://github.com/horoshopodumaj/recommendations"
+                                            target="_blank"
+                                        >
+                                            <button class="button project__button">GitHub</button>
+                                        </form>
+                                        <form
+                                            action="https://recommendations-sggu.onrender.com/"
+                                            target="_blank"
+                                        >
+                                            <button class="button project__button">
+                                                Live site
+                                            </button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="project projects__box">
                             <h3 class="project__title lng-leasing">Car Leasing Calculator</h3>
                             <div class="project__body">
                                 <div class="project__img _anim-items _anim-no-hide">
@@ -395,9 +448,9 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                         <div class="project projects__box">
-                            <h3 class="project__title lng-web">Web Application</h3>
+                            <h3 class="project__title lng-web">Registration form</h3>
                             <div class="project__body">
                                 <div class="project__img _anim-items _anim-no-hide">
                                     <img class="_anim-show-img" src="./img/web.jpg" alt="" />
