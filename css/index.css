@@ -247,11 +247,13 @@ h6 {
   position: absolute;
   top: 100%;
   width: 100%;
-  background-color: var(--grey-2);
+  background-color: var(--white);
   height: 3px;
   transform: scaleX(0);
   transition: transform 250ms ease-in-out;
   bottom: 0px;
+  right: 0;
+  left: 0;
 }
 .navbar__item:hover::after {
   transform: scaleX(1);
