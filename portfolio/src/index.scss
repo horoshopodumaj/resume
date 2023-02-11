@@ -1,13 +1,24 @@
-body {
-    margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
-        "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
-code {
-    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+$main-front: "Poppins", sans-serif;
+
+// body {
+//     margin: 0;
+//     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
+//         "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+//     -webkit-font-smoothing: antialiased;
+//     -moz-osx-font-smoothing: grayscale;
+// }
+
+// code {
+//     font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+// }
+
+:root {
+    --main: #000000;
+    --border: #1f3d5a;
+    --font: #fff;
+    --active: #20c997;
 }
 * {
     padding: 0;
@@ -41,7 +52,7 @@ aside {
 
 html,
 body {
-    //font-family: $main-front;
+    font-family: $main-front;
     scroll-behavior: smooth;
     height: 100%;
     width: 100%;

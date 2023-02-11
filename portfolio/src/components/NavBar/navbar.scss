@@ -1,0 +1,121 @@
+.navbar {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    width: 260px;
+    background-color: var(--main);
+    height: 100%;
+    z-index: 10;
+    @media (max-width: 992px) {
+        height: auto;
+        width: 100%;
+    }
+
+    &__container {
+        padding: 16px 16px 8px 16px;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+        //justify-content: center;
+        height: 100%;
+        text-align: center;
+        @media (max-width: 992px) {
+            flex-direction: row;
+            flex-wrap: wrap;
+            height: auto;
+        }
+    }
+
+    &__frame {
+        margin-top: 24px;
+    }
+
+    &__avatar {
+        background-color: var(--border);
+        padding: 8px;
+        display: inline-block;
+        border-radius: 50%;
+        transition: all 0.5s ease;
+        &:hover {
+            background-color: var(--active);
+        }
+        @media (max-width: 992px) {
+            display: none;
+        }
+    }
+
+    &__img {
+        border-radius: 50%;
+        width: 160px;
+        height: 160px;
+    }
+
+    &__title {
+        margin-top: 10px;
+        color: var(--font);
+        font-size: 1.325rem;
+        font-weight: 500;
+        transition: all 0.5s ease;
+        &:hover {
+            color: var(--active);
+        }
+    }
+
+    &__menu {
+        flex-grow: 1;
+        flex-basis: auto;
+        display: flex;
+        margin-bottom: auto;
+        margin-top: auto;
+        width: 100%;
+        align-items: center;
+        @media (max-width: 992px) {
+            display: none;
+        }
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: var(--font);
+        width: 100%;
+    }
+
+    &__link {
+        color: inherit;
+        padding: 10px 0;
+        display: block;
+        line-height: 24px;
+    }
+
+    &__social {
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        padding-bottom: "15px";
+    }
+
+    &__toggler {
+        display: none;
+        @media (max-width: 992px) {
+            position: relative;
+            z-index: 10;
+            display: block;
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            span {
+                background-color: var(--font);
+                width: 37px;
+                height: 3px;
+                border-radius: 4px;
+                display: block;
+                margin: 6px 0;
+            }
+        }
+    }
+}
