@@ -28,6 +28,7 @@
     },
     "dependencies": {
         "gsap": "^3.11.3",
+        "scss": "^0.2.4",
         "typed.js": "^2.0.12"
     }
 }
