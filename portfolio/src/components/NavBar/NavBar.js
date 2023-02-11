@@ -3,8 +3,10 @@ import "./navbar.scss";
 import mainFoto from "../../assets/img/my_photo.jpg";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
-import { List, ListItem, ListItemIcon } from "@mui/material";
+import { Box, List, ListItem, ListItemIcon } from "@mui/material";
 import { Link } from "react-router-dom";
+import LocalePicker from "../../LocalePicker";
+import { FormattedMessage } from "react-intl";
 
 export default function NavBar() {
     return (
@@ -17,18 +19,18 @@ export default function NavBar() {
                         </span>
                         <h2 className="navbar__title">Diana Murtazina</h2>
                     </a>
-                    <select name="#" id="select" className="navbar__lang">
+                    {/* <select name="#" id="select" className="navbar__lang">
                         <option value="ru">RU</option>
                         <option value="en" selected>
                             EN
                         </option>
-                    </select>
+                    </select> */}
 
                     <div className="navbar__menu">
                         <ul className="navbar__list header__nav">
                             <li className="navbar__item">
                                 <a className="navbar__link" href="#home">
-                                    Home
+                                    <FormattedMessage id="home" />
                                 </a>
                             </li>
                             <li className="navbar__item">
@@ -48,42 +50,45 @@ export default function NavBar() {
                             </li>
                         </ul>
                     </div>
-                    <List className="navbar__social">
-                        <ListItem sx={{ padding: 0, paddingRight: "10px" }}>
-                            <Link>
-                                <ListItemIcon
-                                    sx={{
-                                        minWidth: "fit-content",
-                                    }}>
-                                    <LinkedInIcon
+                    <Box sx={{ display: "flex" }}>
+                        <List className="navbar__social">
+                            <ListItem sx={{ padding: 0, paddingRight: "10px" }}>
+                                <Link>
+                                    <ListItemIcon
                                         sx={{
-                                            "&.MuiSvgIcon-root:hover": {
-                                                color: "#0A66C2",
-                                            },
-                                            color: "white",
-                                        }}
-                                    />
-                                </ListItemIcon>
-                            </Link>
-                        </ListItem>
-                        <ListItem sx={{ padding: 0, paddingRight: "10px" }}>
-                            <Link>
-                                <ListItemIcon
-                                    sx={{
-                                        minWidth: "fit-content",
-                                    }}>
-                                    <GitHubIcon
+                                            minWidth: "fit-content",
+                                        }}>
+                                        <LinkedInIcon
+                                            sx={{
+                                                "&.MuiSvgIcon-root:hover": {
+                                                    color: "#0A66C2",
+                                                },
+                                                color: "white",
+                                            }}
+                                        />
+                                    </ListItemIcon>
+                                </Link>
+                            </ListItem>
+                            <ListItem sx={{ padding: 0, paddingRight: "10px" }}>
+                                <Link>
+                                    <ListItemIcon
                                         sx={{
-                                            "&.MuiSvgIcon-root:hover": {
-                                                color: "#1f3d5a",
-                                            },
-                                            color: "white",
-                                        }}
-                                    />
-                                </ListItemIcon>
-                            </Link>
-                        </ListItem>
-                    </List>
+                                            minWidth: "fit-content",
+                                        }}>
+                                        <GitHubIcon
+                                            sx={{
+                                                "&.MuiSvgIcon-root:hover": {
+                                                    color: "#1f3d5a",
+                                                },
+                                                color: "white",
+                                            }}
+                                        />
+                                    </ListItemIcon>
+                                </Link>
+                            </ListItem>
+                        </List>
+                        <LocalePicker />
+                    </Box>
 
                     <button className="navbar__toggler">
                         <span></span>
