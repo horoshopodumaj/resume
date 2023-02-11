@@ -9,6 +9,7 @@ import LocalePicker from "../../LocalePicker";
 import { FormattedMessage } from "react-intl";
 
 export default function NavBar() {
+    const navItems = ["home", "about", "projects", "contact"];
     return (
         <header className="header">
             <nav className="navbar">
@@ -19,16 +20,16 @@ export default function NavBar() {
                         </span>
                         <h2 className="navbar__title">Diana Murtazina</h2>
                     </a>
-                    {/* <select name="#" id="select" className="navbar__lang">
-                        <option value="ru">RU</option>
-                        <option value="en" selected>
-                            EN
-                        </option>
-                    </select> */}
-
                     <div className="navbar__menu">
                         <ul className="navbar__list header__nav">
-                            <li className="navbar__item">
+                            {navItems.map((item) => (
+                                <li key={item} className="navbar__item">
+                                    <a className="navbar__link" href={`#${item}`}>
+                                        <FormattedMessage id={`${item}`} />
+                                    </a>
+                                </li>
+                            ))}
+                            {/* <li className="navbar__item">
                                 <a className="navbar__link" href="#home">
                                     <FormattedMessage id="home" />
                                 </a>
@@ -47,7 +48,7 @@ export default function NavBar() {
                                 <a className="navbar__link" href="#contactme">
                                     Contact Me
                                 </a>
-                            </li>
+                            </li> */}
                         </ul>
                     </div>
                     <Box sx={{ display: "flex" }}>

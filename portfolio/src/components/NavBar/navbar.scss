@@ -31,6 +31,9 @@
 
     &__frame {
         margin-top: 24px;
+        @media (max-width: 992px) {
+            margin-top: 0;
+        }
     }
 
     &__avatar {
@@ -61,6 +64,9 @@
         transition: all 0.5s ease;
         &:hover {
             color: var(--active);
+        }
+        @media (max-width: 992px) {
+            margin-top: 0;
         }
     }
 
