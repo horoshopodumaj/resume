@@ -6,6 +6,7 @@ import GlobalContext from "./context/GlobalContext";
 import NavBar from "./components/NavBar/NavBar";
 import { useState } from "react";
 import Home from "./components/Home/Home";
+import About from "./components/About/About";
 
 function App() {
     const [currentLocale, setCurrentLocale] = useState(
@@ -28,6 +29,7 @@ function App() {
                 <div className="page">
                     <NavBar />
                     <Home />
+                    <About />
                 </div>
             </IntlProvider>
         </GlobalContext.Provider>
