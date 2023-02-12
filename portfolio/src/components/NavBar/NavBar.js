@@ -20,7 +20,9 @@ export default function NavBar() {
                         <span className="navbar__avatar">
                             <img className="navbar__img" src={mainFoto} alt="mainphoto" />
                         </span>
-                        <h2 className="navbar__title">Diana Murtazina</h2>
+                        <h2 className="navbar__title">
+                            <FormattedMessage id="name" />
+                        </h2>
                     </a>
                     <div className={active ? "navbar__menu navbar__menu--active" : `navbar__menu`}>
                         <ul className="navbar__list header__nav">

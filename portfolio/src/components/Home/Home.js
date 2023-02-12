@@ -1,5 +1,6 @@
 import "./home.scss";
 import Typewriter from "typewriter-effect";
+import { FormattedMessage } from "react-intl";
 
 export default function Home() {
     return (
@@ -9,7 +10,9 @@ export default function Home() {
                 <div className="hero__bg"></div>
                 <div className="hero__content">
                     <div className="container">
-                        <h1 className="hero__title">Welcome to my Portfolio</h1>
+                        <h1 className="hero__title">
+                            <FormattedMessage id="welcome" />
+                        </h1>
                         <h2 className="hero__typewriter">
                             <Typewriter
                                 options={{
@@ -24,7 +27,7 @@ export default function Home() {
                             />
                         </h2>
                         <a className="hero__button" href="#contact">
-                            Contact Me
+                            <FormattedMessage id="heroContact" />
                         </a>
                     </div>
                 </div>
