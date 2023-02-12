@@ -5,11 +5,13 @@ import { messages } from "./i18n/messages";
 import GlobalContext from "./context/GlobalContext";
 import NavBar from "./components/NavBar/NavBar";
 import { useState } from "react";
+import Home from "./components/Home/Home";
 
 function App() {
     const [currentLocale, setCurrentLocale] = useState(
         localStorage.getItem("language") || LOCALES.EN
     );
+
     return (
         <GlobalContext.Provider value={{ currentLocale, setCurrentLocale }}>
             <IntlProvider
@@ -25,6 +27,7 @@ function App() {
                 defaultLocale={LOCALES.EN}>
                 <div className="page">
                     <NavBar />
+                    <Home />
                 </div>
             </IntlProvider>
         </GlobalContext.Provider>
