@@ -51,4 +51,21 @@
         line-height: 80px;
         margin-bottom: 16px;
     }
+
+    &__button {
+        display: inline-block;
+        font-weight: 500;
+        color: var(--active);
+        border: 2px solid var(--active);
+        padding: 14px 40px;
+        border-radius: 30px;
+        margin-top: 8px;
+        margin-bottom: 16px;
+        background-color: inherit;
+        transition: all 0.5s ease;
+        &:hover {
+            background-color: var(--active);
+            color: var(--font);
+        }
+    }
 }
