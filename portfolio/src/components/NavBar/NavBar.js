@@ -11,6 +11,7 @@ import { FormattedMessage } from "react-intl";
 export default function NavBar() {
     const navItems = ["home", "about", "projects", "contact"];
     const [active, setActive] = useState(false);
+    const [activeLink, setActiveLink] = useState(false);
     return (
         <header className="header">
             <nav className="navbar">
@@ -25,7 +26,10 @@ export default function NavBar() {
                         <ul className="navbar__list header__nav">
                             {navItems.map((item) => (
                                 <li key={item} className="navbar__item">
-                                    <a className="navbar__link" href={`#${item}`}>
+                                    <a
+                                        className="navbar__link"
+                                        href={`#${item}`}
+                                        onClick={() => setActiveLink(!activeLink)}>
                                         <FormattedMessage id={`${item}`} />
                                     </a>
                                 </li>

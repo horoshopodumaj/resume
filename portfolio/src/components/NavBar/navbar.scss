@@ -122,6 +122,10 @@
         padding: 10px 0;
         display: block;
         line-height: 24px;
+        transition: all 0.5s ease;
+        &:hover {
+            color: var(--active);
+        }
     }
 
     &__social {
