@@ -1,5 +1,8 @@
 .page {
     margin-left: 260px;
+    @media (max-width: 992px) {
+        margin-left: 0;
+    }
 }
 
 .select-fieldset fieldset {

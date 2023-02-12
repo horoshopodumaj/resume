@@ -1,4 +1,4 @@
-import React from "react";
+import { useState } from "react";
 import "./navbar.scss";
 import mainFoto from "../../assets/img/my_photo.jpg";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
@@ -10,17 +10,18 @@ import { FormattedMessage } from "react-intl";
 
 export default function NavBar() {
     const navItems = ["home", "about", "projects", "contact"];
+    const [active, setActive] = useState(false);
     return (
         <header className="header">
             <nav className="navbar">
                 <div className="navbar__container">
-                    <a className="navbar__frame" href="">
+                    <a className="navbar__frame" href="#">
                         <span className="navbar__avatar">
-                            <img className="navbar__img" src={mainFoto} alt="photo" />
+                            <img className="navbar__img" src={mainFoto} alt="mainphoto" />
                         </span>
                         <h2 className="navbar__title">Diana Murtazina</h2>
                     </a>
-                    <div className="navbar__menu">
+                    <div className={active ? "navbar__menu navbar__menu--active" : `navbar__menu`}>
                         <ul className="navbar__list header__nav">
                             {navItems.map((item) => (
                                 <li key={item} className="navbar__item">
@@ -29,29 +30,9 @@ export default function NavBar() {
                                     </a>
                                 </li>
                             ))}
-                            {/* <li className="navbar__item">
-                                <a className="navbar__link" href="#home">
-                                    <FormattedMessage id="home" />
-                                </a>
-                            </li>
-                            <li className="navbar__item">
-                                <a className="navbar__link" href="#aboutme">
-                                    About me
-                                </a>
-                            </li>
-                            <li className="navbar__item">
-                                <a className="navbar__link" href="#project">
-                                    My projects
-                                </a>
-                            </li>
-                            <li className="navbar__item">
-                                <a className="navbar__link" href="#contactme">
-                                    Contact Me
-                                </a>
-                            </li> */}
                         </ul>
                     </div>
-                    <Box sx={{ display: "flex" }}>
+                    <Box sx={{ display: "flex" }} className="navbar__box">
                         <List className="navbar__social">
                             <ListItem sx={{ padding: 0, paddingRight: "10px" }}>
                                 <Link>
@@ -91,7 +72,11 @@ export default function NavBar() {
                         <LocalePicker />
                     </Box>
 
-                    <button className="navbar__toggler">
+                    <button
+                        className={
+                            active ? "navbar__toggler navbar__toggler--active" : `navbar__toggler`
+                        }
+                        onClick={() => setActive(!active)}>
                         <span></span>
                         <span></span>
                         <span></span>
