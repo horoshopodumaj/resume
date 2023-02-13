@@ -10,7 +10,9 @@ export default function About() {
                 </div>
                 <div className="about__inner">
                     <div className="about__content">
-                        <h3 className="about__littletitle">I'm Diana, a front-end developer</h3>
+                        <h3 className="about__littletitle">
+                            I'm Diana, a<span> front-end developer</span>
+                        </h3>
                         <p className="about__desc">
                             {" "}
                             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores
@@ -31,7 +33,9 @@ export default function About() {
                             <li className="about__email">
                                 {" "}
                                 <span className="about__item">Email:</span>{" "}
-                                dianamurtazina.job@gmail.com
+                                <a href="mailto:dianamurtazina.job@gmail.com">
+                                    dianamurtazina.job@gmail.com
+                                </a>
                             </li>
                         </ul>
                     </div>
