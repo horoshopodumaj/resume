@@ -57,42 +57,54 @@ export default function About() {
                                 <p className="skills__text">HTML</p>
                                 <p className="skills__num">95%</p>
                             </div>
-                            <div className="skills__line" style={{ width: "95%" }}></div>
+                            <div className="skills__bar">
+                                <div className="skills__line" style={{ width: "95%" }}></div>
+                            </div>
                         </div>
                         <div className="skills__item">
                             <div className="skills__content">
                                 <p className="skills__text">CSS</p>
                                 <p className="skills__num">80%</p>
                             </div>
-                            <div className="skills__line" style={{ width: "80%" }}></div>
+                            <div className="skills__bar">
+                                <div className="skills__line" style={{ width: "80%" }}></div>
+                            </div>
                         </div>
                         <div className="skills__item">
                             <div className="skills__content">
                                 <p className="skills__text">Javascript</p>
                                 <p className="skills__num">70%</p>
                             </div>
-                            <div className="skills__line" style={{ width: "70%" }}></div>
+                            <div className="skills__bar">
+                                <div className="skills__line" style={{ width: "70%" }}></div>
+                            </div>
                         </div>
                         <div className="skills__item">
                             <div className="skills__content">
                                 <p className="skills__text">React</p>
                                 <p className="skills__num">60%</p>
                             </div>
-                            <div className="skills__line" style={{ width: "60%" }}></div>
+                            <div className="skills__bar">
+                                <div className="skills__line" style={{ width: "60%" }}></div>
+                            </div>{" "}
                         </div>
                         <div className="skills__item">
                             <div className="skills__content">
                                 <p className="skills__text">MUI</p>
                                 <p className="skills__num">70%</p>
                             </div>
-                            <div className="skills__line" style={{ width: "70%" }}></div>
+                            <div className="skills__bar">
+                                <div className="skills__line" style={{ width: "70%" }}></div>
+                            </div>
                         </div>
                         <div className="skills__item">
                             <div className="skills__content">
                                 <p className="skills__text">Redux Toolkit</p>
                                 <p className="skills__num">50%</p>
                             </div>
-                            <div className="skills__line" style={{ width: "50%" }}></div>
+                            <div className="skills__bar">
+                                <div className="skills__line" style={{ width: "50%" }}></div>
+                            </div>
                         </div>
                     </div>
                 </div>
