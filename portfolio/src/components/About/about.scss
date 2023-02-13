@@ -41,7 +41,6 @@
         width: 66%;
         margin-top: 48px;
     }
-    //#dee3e4
 
     &__info {
         flex: 0 0 auto;
@@ -62,7 +61,7 @@
     &__desc {
         font-weight: 400;
         line-height: 28px;
-        color: hsla(0, 0%, 100%, 0.5);
+        color: var(--desc);
     }
 
     &__item {
@@ -76,7 +75,8 @@
     &__email {
         font-weight: 400;
         padding: 12px 0;
-        border-bottom: 1px solid hsla(0, 0%, 98%, 0.12);
+        border-bottom: 1px solid var(--border-bottom);
+        color: #dee3e4;
     }
 
     &__email a {

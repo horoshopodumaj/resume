@@ -9,6 +9,10 @@ export const messages = {
         contact: "Contact me",
         welcome: "Welcome to My Portfolio",
         heroContact: "Contact Me",
+        knowMeMore: "Know me more",
+        aboutName: "Name",
+        aboutI: "I'm Diana, a",
+        frontend: "front-end developer",
     },
     [LOCALES.RU]: {
         name: "Диана Муртазина",
@@ -16,7 +20,11 @@ export const messages = {
         about: "Обо мне",
         projects: "Мои проекты",
         contact: "Мои контакты",
-        welcome: "Приветствую на странице моего портфолио",
+        welcome: "Добро пожаловать на страницу моего портфолио",
         heroContact: "Свяжитесь со мной",
+        knowMeMore: "Немного обо мне",
+        aboutName: "Имя",
+        aboutI: "Меня зовут Диана, я",
+        frontend: "фронтенд разработчица ",
     },
 };
