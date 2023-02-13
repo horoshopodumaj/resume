@@ -50,7 +50,9 @@ export default function About() {
                     </div>
                 </div>
                 <div className="skills">
-                    <h2 className="skills__title">My Skills</h2>
+                    <h2 className="skills__title">
+                        <FormattedMessage id="skills" />
+                    </h2>
                     <div className="skills__list">
                         <div className="skills__item">
                             <div className="skills__content">
