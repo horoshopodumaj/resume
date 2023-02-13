@@ -99,6 +99,15 @@
         }
         &.navbar__menu--active {
             transform: translateY(0px);
+            text-align: left;
+            padding: 10px 16px;
+            padding-top: 70px;
+        }
+        &.navbar__menu--active .navbar__item {
+            border-bottom: 2px solid var(--border-bottom);
+        }
+        &.navbar__menu--active .navbar__item:last-child {
+            border-bottom: none;
         }
     }
 
