@@ -20,6 +20,9 @@ export const messages = {
             "Layout of a website for traveling to Indonesia. The site has implemented a burger menu, a gallery in pure Javascript. The layout is adaptive.",
         landingTitle: "Landing Page Layout",
         supDesc: `Layout of a beautiful adaptive landing page for sale of sup board. The landing page contains two galleries of images with an unusual design. Grids were used in the layout. Gulp was used when building the project.`,
+        sashaTitle: "Portfolio layout",
+        sashaDesc:
+            "The portfolio is written in React, using the MUI library. It is possible to switch languages.",
     },
     [LOCALES.RU]: {
         name: "Диана Муртазина",
@@ -40,5 +43,8 @@ export const messages = {
             "Верстка сайт для путешествий в Индонезию. На сайте реализовано бургер  меню, галерея на чистом Javascript. Верстка адаптивная.",
         landingTitle: "Верстка лендинга",
         supDesc: `Верстка красивого адаптивного лендинга для продажи сап борда. Лендинг содержит две галереи изображений с необычным дизайном. При верстке использованы гриды. При сборке проекта использован Gulp.`,
+        sashaTitle: "Верстка портфолио",
+        sashaDesc:
+            "Портфолио написано на React, с использованием библиотеки MUI. Есть возможность переключения языков.",
     },
 };
