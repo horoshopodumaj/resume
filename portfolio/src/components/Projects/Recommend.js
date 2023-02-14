@@ -10,15 +10,6 @@ import { FormattedMessage } from "react-intl";
 import { OverlayScrollbars } from "overlayscrollbars";
 import "overlayscrollbars/overlayscrollbars.css";
 
-// const modal = document.querySelector(".modal__container");
-// OverlayScrollbars(modal, {
-//     resize: "none",
-//     scrollbars: {
-//         visibility: "auto",
-//         autoHide: "move",
-//     },
-// });
-
 export default function Recommend() {
     const [open, setOpen] = useState(false);
     const handleOpen = () => setOpen(true);
@@ -37,8 +28,8 @@ export default function Recommend() {
             <button className="project__item" onClick={handleOpen}>
                 <img className="project__img" src={recomm} alt="recomm"></img>
                 <div className="project__info">
-                    <h6 className="project__subtitle">Recommend</h6>
-                    <p className="project__text">React/MUI</p>
+                    <h6 className="project__subtitle">application</h6>
+                    <p className="project__text">React/Node.js</p>
                 </div>
             </button>
             <Modal
@@ -61,7 +52,7 @@ export default function Recommend() {
                         </IconButton>
                         <div className="modal__content">
                             <h3 className="modal__title">
-                                <FormattedMessage id="sashaTitle" />
+                                <FormattedMessage id="recommendTitle" />
                             </h3>
                             <div className="modal__inner">
                                 <div className="modal__gallery">
@@ -82,17 +73,21 @@ export default function Recommend() {
                                     </Slider>
                                 </div>
                                 <div className="modal__info">
-                                    <div className="modal__tech">React, MUI</div>
+                                    <div className="modal__tech">
+                                        React, Node.js, Express, Postgresql, Sequelize
+                                    </div>
                                     <div className="modal__desc">
-                                        <FormattedMessage id="sashaDesc" />
+                                        <FormattedMessage id="recommendDesc" />
                                     </div>
                                     <div className="modal__buttons">
                                         <form
-                                            action="https://github.com/horoshopodumaj/brechko"
+                                            action="https://github.com/horoshopodumaj/recommendations"
                                             target="_blank">
                                             <button className="modal__button">GitHub</button>
                                         </form>
-                                        <form action="https://brechko.vercel.app" target="_blank">
+                                        <form
+                                            action="https://recommendations-sggu.onrender.com/"
+                                            target="_blank">
                                             <button className="modal__button">Live Site</button>
                                         </form>
                                     </div>

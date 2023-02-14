@@ -27,7 +27,7 @@ export default function Login() {
                 <img className="project__img" src={login} alt="login"></img>
                 <div className="project__info">
                     <h6 className="project__subtitle">Table</h6>
-                    <p className="project__text">React/Node.js/Express/MongoDB</p>
+                    <p className="project__text">React/Node.js</p>
                 </div>
             </button>
             <Modal

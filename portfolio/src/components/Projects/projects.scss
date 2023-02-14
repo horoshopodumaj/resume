@@ -125,7 +125,7 @@
     }
 
     &__subtitle {
-        font-size: 32px;
+        font-size: 28px;
         line-height: 150%;
         font-weight: 600;
         padding-bottom: 19px;
@@ -138,7 +138,7 @@
             bottom: 0;
             position: absolute;
             height: 2px;
-            background-color: var(--active);
+            background-color: var(--title);
             width: 80%;
             margin: 0 auto;
             left: 0;
@@ -149,7 +149,7 @@
     &__text {
         font-weight: 600;
         font-size: 14px;
-        color: var(--title);
+        color: var(--active);
     }
 }
 
