@@ -70,8 +70,8 @@ export default function Indonesia() {
                                         layout is adaptive.
                                     </div>
                                     <div className="modal__buttons">
-                                        <button>GitHub</button>
-                                        <button>Live Site</button>
+                                        <button className="modal__button">GitHub</button>
+                                        <button className="modal__button">Live Site</button>
                                     </div>
                                 </div>
                             </div>

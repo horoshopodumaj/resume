@@ -244,5 +244,25 @@
         flex: 1;
         color: var(--font-2);
         text-align: justify;
+        margin-bottom: 15px;
+    }
+
+    &__buttons {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__button {
+        background-color: transparent;
+        border: 2px solid var(--active);
+        padding: 10px 24px;
+        border-radius: 15px;
+        color: var(--active);
+        font-weight: 500;
+        margin-right: 10px;
+        &:hover {
+            background-color: var(--active);
+            color: var(--font);
+        }
     }
 }
