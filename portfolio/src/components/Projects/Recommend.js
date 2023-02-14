@@ -19,7 +19,7 @@ import "overlayscrollbars/overlayscrollbars.css";
 //     },
 // });
 
-export default function Brechko() {
+export default function Recommend() {
     const [open, setOpen] = useState(false);
     const handleOpen = () => setOpen(true);
     const handleClose = () => setOpen(false);

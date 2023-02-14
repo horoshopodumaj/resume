@@ -7,6 +7,7 @@ import "slick-carousel/slick/slick-theme.css";
 import Sup from "./Sup";
 import Brechko from "./Brechko";
 import Recommend from "./Recommend";
+import Login from "./Login";
 
 export default function Projects() {
     return (
@@ -26,7 +27,7 @@ export default function Projects() {
                         <Sup />
                         <Brechko />
                         <Recommend />
-                        <Indonesia />
+                        <Login />
                     </div>
                 </div>
             </div>
