@@ -4,6 +4,7 @@ import "./projects.scss";
 import Indonesia from "./Indonesia";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Sup from "./Sup";
 
 export default function Projects() {
     return (
@@ -20,7 +21,7 @@ export default function Projects() {
                 <div className="projects__inner">
                     <div className="projects__items">
                         <Indonesia />
-                        <Indonesia />
+                        <Sup />
                         <Indonesia />
                         <Indonesia />
                         <Indonesia />

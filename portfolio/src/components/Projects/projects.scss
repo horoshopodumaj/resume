@@ -132,6 +132,7 @@
         margin-bottom: 19px;
         position: relative;
         color: var(--font);
+        text-transform: uppercase;
         &::after {
             content: "";
             bottom: 0;
@@ -175,11 +176,17 @@
 
     &__inner {
         display: flex;
+        margin-left: -12px;
+        margin-right: -12px;
+        margin-top: -24px;
     }
 
     &__gallery {
         width: 58%;
         text-align: center;
+        margin-top: 24px;
+        padding-left: 12px;
+        padding-right: 12px;
         .slick-dots {
             position: static;
             margin-top: 15px;
@@ -223,7 +230,7 @@
     }
 
     &__img {
-        max-height: 350px;
+        max-height: 400px;
         width: auto !important;
     }
 
@@ -231,6 +238,9 @@
         width: 42%;
         display: flex;
         flex-direction: column;
+        margin-top: 24px;
+        padding-left: 12px;
+        padding-right: 12px;
     }
 
     &__tech {
@@ -258,7 +268,7 @@
         padding: 10px 24px;
         border-radius: 15px;
         color: var(--active);
-        font-weight: 500;
+        font-weight: 600;
         margin-right: 10px;
         &:hover {
             background-color: var(--active);

@@ -1,11 +1,13 @@
 import { IconButton, Modal } from "@mui/material";
 import { useState } from "react";
-import indonesia from "../../assets/img/projects/indonesia.jpg";
-import indonesia2 from "../../assets/img/projects/indonesia2.jpg";
+import sup from "../../assets/img/projects/sup.jpg";
+import sup2 from "../../assets/img/projects/sup2.jpg";
+import sup3 from "../../assets/img/projects/sup3.jpg";
+//import indonesia2 from "../../assets/img/projects/indonesia2.jpg";
 import Slider from "react-slick";
 import CloseIcon from "@mui/icons-material/Close";
 
-export default function Indonesia() {
+export default function Sup() {
     const [open, setOpen] = useState(false);
     const handleOpen = () => setOpen(true);
     const handleClose = () => setOpen(false);
@@ -20,10 +22,10 @@ export default function Indonesia() {
     return (
         <div className="project">
             <button className="project__item" onClick={handleOpen}>
-                <img className="project__img" src={indonesia} alt="indonesia"></img>
+                <img className="project__img" src={sup} alt="indonesia"></img>
                 <div className="project__info">
-                    <h6 className="project__subtitle">Indonesia</h6>
-                    <p className="project__text">HTML/CSS/JS</p>
+                    <h6 className="project__subtitle">SUP</h6>
+                    <p className="project__text">HTML/CSS</p>
                 </div>
             </button>
             <Modal
@@ -45,35 +47,37 @@ export default function Indonesia() {
                             />
                         </IconButton>
                         <div className="modal__content">
-                            <h3 className="modal__title">Website For Travel To Indonesia</h3>
+                            <h3 className="modal__title">Landing Page Layout</h3>
                             <div className="modal__inner">
                                 <div className="modal__gallery">
                                     <Slider {...settings}>
+                                        <img className="modal__img" src={sup} alt="indonesia"></img>
                                         <img
                                             className="modal__img"
-                                            src={indonesia}
+                                            src={sup2}
                                             alt="indonesia"></img>
                                         <img
                                             className="modal__img"
-                                            src={indonesia2}
+                                            src={sup3}
                                             alt="indonesia"></img>
                                     </Slider>
                                 </div>
                                 <div className="modal__info">
-                                    <div className="modal__tech">HTML, CSS, JS</div>
+                                    <div className="modal__tech">HTML, CSS, Gulp</div>
                                     <div className="modal__desc">
-                                        Layout of a website for traveling to Indonesia. The site has
-                                        implemented a burger menu, a gallery in pure Javascript. The
-                                        layout is adaptive.
+                                        Layout of a beautiful adaptive landing page for sale of sup
+                                        board. The landing page contains two galleries of images
+                                        with an unusual design. Grids were used in the layout. Gulp
+                                        was used when building the project.
                                     </div>
                                     <div className="modal__buttons">
                                         <form
-                                            action="https://github.com/horoshopodumaj/indonesia"
+                                            action="https://github.com/horoshopodumaj/sup"
                                             target="_blank">
                                             <button className="modal__button">GitHub</button>
                                         </form>
                                         <form
-                                            action="https://indonesia-green.vercel.app/"
+                                            action="https://sup-nu-ten.vercel.app/"
                                             target="_blank">
                                             <button className="modal__button">Live Site</button>
                                         </form>
