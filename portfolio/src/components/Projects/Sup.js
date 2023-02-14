@@ -3,9 +3,9 @@ import { useState } from "react";
 import sup from "../../assets/img/projects/sup.jpg";
 import sup2 from "../../assets/img/projects/sup2.jpg";
 import sup3 from "../../assets/img/projects/sup3.jpg";
-//import indonesia2 from "../../assets/img/projects/indonesia2.jpg";
 import Slider from "react-slick";
 import CloseIcon from "@mui/icons-material/Close";
+import { FormattedMessage } from "react-intl";
 
 export default function Sup() {
     const [open, setOpen] = useState(false);
@@ -22,7 +22,7 @@ export default function Sup() {
     return (
         <div className="project">
             <button className="project__item" onClick={handleOpen}>
-                <img className="project__img" src={sup} alt="indonesia"></img>
+                <img className="project__img" src={sup} alt="sup"></img>
                 <div className="project__info">
                     <h6 className="project__subtitle">SUP</h6>
                     <p className="project__text">HTML/CSS</p>
@@ -47,7 +47,9 @@ export default function Sup() {
                             />
                         </IconButton>
                         <div className="modal__content">
-                            <h3 className="modal__title">Landing Page Layout</h3>
+                            <h3 className="modal__title">
+                                <FormattedMessage id="landingTitle" />
+                            </h3>
                             <div className="modal__inner">
                                 <div className="modal__gallery">
                                     <Slider {...settings}>
@@ -65,10 +67,7 @@ export default function Sup() {
                                 <div className="modal__info">
                                     <div className="modal__tech">HTML, CSS, Gulp</div>
                                     <div className="modal__desc">
-                                        Layout of a beautiful adaptive landing page for sale of sup
-                                        board. The landing page contains two galleries of images
-                                        with an unusual design. Grids were used in the layout. Gulp
-                                        was used when building the project.
+                                        <FormattedMessage id="supDesc" />
                                     </div>
                                     <div className="modal__buttons">
                                         <form

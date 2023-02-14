@@ -4,6 +4,7 @@ import indonesia from "../../assets/img/projects/indonesia.jpg";
 import indonesia2 from "../../assets/img/projects/indonesia2.jpg";
 import Slider from "react-slick";
 import CloseIcon from "@mui/icons-material/Close";
+import { FormattedMessage } from "react-intl";
 
 export default function Indonesia() {
     const [open, setOpen] = useState(false);
@@ -45,7 +46,9 @@ export default function Indonesia() {
                             />
                         </IconButton>
                         <div className="modal__content">
-                            <h3 className="modal__title">Website For Travel To Indonesia</h3>
+                            <h3 className="modal__title">
+                                <FormattedMessage id="indonesiaTitle" />
+                            </h3>
                             <div className="modal__inner">
                                 <div className="modal__gallery">
                                     <Slider {...settings}>
@@ -62,9 +65,7 @@ export default function Indonesia() {
                                 <div className="modal__info">
                                     <div className="modal__tech">HTML, CSS, JS</div>
                                     <div className="modal__desc">
-                                        Layout of a website for traveling to Indonesia. The site has
-                                        implemented a burger menu, a gallery in pure Javascript. The
-                                        layout is adaptive.
+                                        <FormattedMessage id="indonesiaDesc" />
                                     </div>
                                     <div className="modal__buttons">
                                         <form
