@@ -7,6 +7,7 @@ import NavBar from "./components/NavBar/NavBar";
 import { useState } from "react";
 import Home from "./components/Home/Home";
 import About from "./components/About/About";
+import Projects from "./components/Projects/Projects";
 
 function App() {
     const [currentLocale, setCurrentLocale] = useState(
@@ -30,6 +31,7 @@ function App() {
                     <NavBar />
                     <Home />
                     <About />
+                    <Projects />
                 </div>
             </IntlProvider>
         </GlobalContext.Provider>

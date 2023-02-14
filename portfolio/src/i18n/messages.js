@@ -14,6 +14,7 @@ export const messages = {
         aboutI: "I'm Diana, a",
         frontend: "front-end developer",
         skills: "My skills",
+        portfolio: "portfolio",
     },
     [LOCALES.RU]: {
         name: "Диана Муртазина",
@@ -28,5 +29,6 @@ export const messages = {
         aboutI: "Меня зовут Диана, я",
         frontend: "фронтенд разработчица ",
         skills: "Мои навыки",
+        portfolio: "портфолио",
     },
 };

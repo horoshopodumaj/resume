@@ -7,6 +7,8 @@
 
 .container {
     padding: 0 36px;
+    max-width: 1111px;
+    margin: 0 auto;
     @media (max-width: 992px) {
         padding: 0 16px;
     }
