@@ -155,14 +155,21 @@
 
 .modal {
     &__container {
-        position: absolute;
+        position: fixed;
         top: 50%;
         left: 50%;
+        //bottom: 0;
+        right: 0;
+        max-height: 90%;
+        height: auto;
         transform: translate(-50%, -50%);
         width: 80%;
         padding: 40px;
         background-color: var(--bg2);
         border-radius: 40px;
+        overflow-y: auto;
+        margin: 20px auto;
+        //margin: 0px auto;
     }
 
     &__title {
@@ -230,8 +237,9 @@
     }
 
     &__img {
-        max-height: 400px;
-        width: auto !important;
+        //max-height: 400px;
+        //width: auto !important;
+        max-width: 100%;
     }
 
     &__info {
@@ -276,3 +284,36 @@
         }
     }
 }
+
+.modal__container::-webkit-scrollbar {
+    width: 4px;
+}
+
+/* Track */
+.modal__container::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+}
+
+/* Handle */
+.modal__container::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+.modal__container::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+// //   .modal {
+// //     height:300px;
+// //     width: 400px;
+// //     overflow-x:scroll;
+// //     white-space: nowrap;
+// //   }
+// //   .modal div {
+// //     width: 150px;
+// //     height: 250px;
+// //     background: #ccc;
+// //     display: inline-block;
+// //   }

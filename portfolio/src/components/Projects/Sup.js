@@ -18,6 +18,7 @@ export default function Sup() {
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: false,
+        adaptiveHeight: true,
     };
     return (
         <div className="project">

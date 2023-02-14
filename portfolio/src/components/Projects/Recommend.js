@@ -1,18 +1,28 @@
-import { Box, IconButton, Modal } from "@mui/material";
-import { useRef, useState } from "react";
-import indonesia from "../../assets/img/projects/indonesia.jpg";
-import indonesia2 from "../../assets/img/projects/indonesia2.jpg";
+import { IconButton, Modal } from "@mui/material";
+import { useState } from "react";
+import recomm from "../../assets/img/projects/recom.jpg";
+import recomm2 from "../../assets/img/projects/recom2.jpg";
+import recomm3 from "../../assets/img/projects/recom3.jpg";
+import recomm4 from "../../assets/img/projects/recom4.jpg";
 import Slider from "react-slick";
 import CloseIcon from "@mui/icons-material/Close";
 import { FormattedMessage } from "react-intl";
-import { useScrollbar } from "../../hooks/useScrollbar";
+import { OverlayScrollbars } from "overlayscrollbars";
+import "overlayscrollbars/overlayscrollbars.css";
 
-export default function Indonesia() {
+// const modal = document.querySelector(".modal__container");
+// OverlayScrollbars(modal, {
+//     resize: "none",
+//     scrollbars: {
+//         visibility: "auto",
+//         autoHide: "move",
+//     },
+// });
+
+export default function Brechko() {
     const [open, setOpen] = useState(false);
     const handleOpen = () => setOpen(true);
     const handleClose = () => setOpen(false);
-    const modal = useRef(null);
-    useScrollbar(modal);
     const settings = {
         dots: true,
         infinite: true,
@@ -25,20 +35,19 @@ export default function Indonesia() {
     return (
         <div className="project">
             <button className="project__item" onClick={handleOpen}>
-                <img className="project__img" src={indonesia} alt="indonesia"></img>
+                <img className="project__img" src={recomm} alt="recomm"></img>
                 <div className="project__info">
-                    <h6 className="project__subtitle">Indonesia</h6>
-                    <p className="project__text">HTML/CSS/JS</p>
+                    <h6 className="project__subtitle">Recommend</h6>
+                    <p className="project__text">React/MUI</p>
                 </div>
             </button>
             <Modal
                 className="modal"
                 open={open}
-                //ref={modal}
                 //onClose={handleClose}
                 aria-labelledby="modal-modal-title"
                 aria-describedby="modal-modal-description">
-                <Box className="modal__container" ref={modal}>
+                <div className="modal__container">
                     <div className="modal__body">
                         <IconButton onClick={handleClose} sx={{ padding: 0, float: "right" }}>
                             <CloseIcon
@@ -52,35 +61,38 @@ export default function Indonesia() {
                         </IconButton>
                         <div className="modal__content">
                             <h3 className="modal__title">
-                                <FormattedMessage id="indonesiaTitle" />
+                                <FormattedMessage id="sashaTitle" />
                             </h3>
                             <div className="modal__inner">
                                 <div className="modal__gallery">
                                     <Slider {...settings}>
+                                        <img className="modal__img" src={recomm} alt="recomm"></img>
                                         <img
                                             className="modal__img"
-                                            src={indonesia}
-                                            alt="indonesia"></img>
+                                            src={recomm2}
+                                            alt="recomm"></img>
                                         <img
                                             className="modal__img"
-                                            src={indonesia2}
-                                            alt="indonesia"></img>
+                                            src={recomm3}
+                                            alt="recomm"></img>
+                                        <img
+                                            className="modal__img"
+                                            src={recomm4}
+                                            alt="recomm"></img>
                                     </Slider>
                                 </div>
                                 <div className="modal__info">
-                                    <div className="modal__tech">HTML, CSS, JS</div>
+                                    <div className="modal__tech">React, MUI</div>
                                     <div className="modal__desc">
-                                        <FormattedMessage id="indonesiaDesc" />
+                                        <FormattedMessage id="sashaDesc" />
                                     </div>
                                     <div className="modal__buttons">
                                         <form
-                                            action="https://github.com/horoshopodumaj/indonesia"
+                                            action="https://github.com/horoshopodumaj/brechko"
                                             target="_blank">
                                             <button className="modal__button">GitHub</button>
                                         </form>
-                                        <form
-                                            action="https://indonesia-green.vercel.app/"
-                                            target="_blank">
+                                        <form action="https://brechko.vercel.app" target="_blank">
                                             <button className="modal__button">Live Site</button>
                                         </form>
                                     </div>
@@ -88,7 +100,7 @@ export default function Indonesia() {
                             </div>
                         </div>
                     </div>
-                </Box>
+                </div>
             </Modal>
         </div>
     );
