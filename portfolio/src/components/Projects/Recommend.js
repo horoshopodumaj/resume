@@ -41,7 +41,9 @@ export default function Recommend() {
                 aria-describedby="modal-modal-description">
                 <div className="modal__container">
                     <div className="modal__body">
-                        <IconButton onClick={handleClose} sx={{ padding: 0, float: "right" }}>
+                        <IconButton
+                            onClick={handleClose}
+                            sx={{ padding: 0, paddingLeft: "5px", float: "right" }}>
                             <CloseIcon
                                 sx={{
                                     "&:hover": {

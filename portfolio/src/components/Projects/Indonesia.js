@@ -41,7 +41,7 @@ export default function Indonesia() {
                 aria-describedby="modal-modal-description">
                 <Box className="modal__container" ref={modal}>
                     <div className="modal__body">
-                        <IconButton onClick={handleClose} sx={{ padding: 0, float: "right" }}>
+                        <IconButton onClick={handleClose} sx={{ padding: "5px", float: "right" }}>
                             <CloseIcon
                                 sx={{
                                     "&:hover": {

@@ -176,6 +176,7 @@
         margin-bottom: 19px;
         position: relative;
         color: var(--font);
+        padding: 5px;
         text-transform: uppercase;
         &::after {
             content: "";
@@ -213,7 +214,24 @@
         border-radius: 40px;
         overflow-y: auto;
         margin: 20px auto;
-        //margin: 0px auto;
+        @media (max-width: 1200px) {
+            width: 90%;
+        }
+        @media (max-width: 720px) {
+            padding: 20px;
+            border-radius: 20px;
+        }
+        @media (max-width: 540px) {
+            margin: 0px auto;
+            max-height: 100%;
+            width: 100%;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            border-radius: 0;
+            transform: translate(0, 0);
+        }
     }
 
     &__title {
@@ -223,6 +241,9 @@
         font-weight: 500;
         color: var(--font);
         margin-bottom: 24px;
+        @media (max-width: 540px) {
+            font-size: 20px;
+        }
     }
 
     &__inner {
@@ -230,6 +251,9 @@
         margin-left: -12px;
         margin-right: -12px;
         margin-top: -24px;
+        @media (max-width: 992px) {
+            flex-direction: column;
+        }
     }
 
     &__gallery {
@@ -238,6 +262,12 @@
         margin-top: 24px;
         padding-left: 12px;
         padding-right: 12px;
+        @media (max-width: 1200px) {
+            width: 50%;
+        }
+        @media (max-width: 992px) {
+            width: 100%;
+        }
         .slick-dots {
             position: static;
             margin-top: 15px;
@@ -281,8 +311,6 @@
     }
 
     &__img {
-        //max-height: 400px;
-        //width: auto !important;
         max-width: 100%;
     }
 
@@ -293,6 +321,12 @@
         margin-top: 24px;
         padding-left: 12px;
         padding-right: 12px;
+        @media (max-width: 1200px) {
+            width: 50%;
+        }
+        @media (max-width: 992px) {
+            width: 100%;
+        }
     }
 
     &__tech {
@@ -328,7 +362,9 @@
         }
     }
 }
-
+form:nth-child(2) .modal__button {
+    margin-right: 0;
+}
 .modal__container::-webkit-scrollbar {
     width: 0px;
 }
