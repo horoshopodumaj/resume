@@ -63,6 +63,7 @@ export const messages = {
         yourEmail: "Your email",
         yourMessage: "Your message",
         send: "Send",
+        author: "Built by Diana Murtazina",
     },
     [LOCALES.RU]: {
         name: "Диана Муртазина",
@@ -111,5 +112,6 @@ export const messages = {
         yourEmail: "Ваша почта",
         yourMessage: "Ваше сообщение",
         send: "Отправить",
+        author: "Автор: Диана Муртазина",
     },
 };
