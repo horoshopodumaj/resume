@@ -7,6 +7,7 @@ export const messages = {
         about: "About me",
         projects: "My projects",
         contact: "Contact me",
+        contactMe: "Contact",
         welcome: "Welcome to My Portfolio",
         heroContact: "Contact Me",
         knowMeMore: "Know me more",
@@ -57,6 +58,11 @@ export const messages = {
         
         The site has sliders, galleries, each video opens in a separate window, Google maps are connected. The layout is valid and cross-browser.`,
         getInTouch: "Get in Touch",
+        sendNote: "SEND ME A NOTE",
+        yourName: "Your name",
+        yourEmail: "Your email",
+        yourMessage: "Your message",
+        send: "Send",
     },
     [LOCALES.RU]: {
         name: "Диана Муртазина",
@@ -64,6 +70,7 @@ export const messages = {
         about: "Обо мне",
         projects: "Мои проекты",
         contact: "Мои контакты",
+        contactMe: "Контакты",
         welcome: "Добро пожаловать на страницу моего портфолио",
         heroContact: "Свяжитесь со мной",
         knowMeMore: "Немного обо мне",
@@ -99,5 +106,10 @@ export const messages = {
         
         На сайте есть слайдеры, галереи, каждое видео открывается в отдельном окне, подключены карты Google. Валидная и кроссбраузерная верстка.`,
         getInTouch: "Связаться со мной",
+        sendNote: "Напишите мне",
+        yourName: "Ваше имя",
+        yourEmail: "Ваша почта",
+        yourMessage: "Ваше сообщение",
+        send: "Отправить",
     },
 };
