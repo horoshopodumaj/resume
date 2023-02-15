@@ -1,6 +1,6 @@
 import { IconButton, Modal } from "@mui/material";
 import { useState } from "react";
-import sasha from "../../assets/img/projects/sasha.jpg";
+import sasha from "../../assets/img/projects/sasha11.jpg";
 import sasha2 from "../../assets/img/projects/sasha2.jpg";
 import sasha3 from "../../assets/img/projects/sasha3.jpg";
 import Slider from "react-slick";

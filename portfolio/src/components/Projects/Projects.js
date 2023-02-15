@@ -8,6 +8,7 @@ import Sup from "./Sup";
 import Brechko from "./Brechko";
 import Recommend from "./Recommend";
 import Login from "./Login";
+import Shop from "./Shop";
 
 export default function Projects() {
     return (
@@ -28,6 +29,7 @@ export default function Projects() {
                         <Brechko />
                         <Recommend />
                         <Login />
+                        <Shop />
                     </div>
                 </div>
             </div>
