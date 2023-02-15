@@ -56,6 +56,7 @@ export const messages = {
         Grids and flex are used for the layout of the site.
         
         The site has sliders, galleries, each video opens in a separate window, Google maps are connected. The layout is valid and cross-browser.`,
+        getInTouch: "Get in Touch",
     },
     [LOCALES.RU]: {
         name: "Диана Муртазина",
@@ -97,5 +98,6 @@ export const messages = {
         Верска с использованием Grid и flex.
         
         На сайте есть слайдеры, галереи, каждое видео открывается в отдельном окне, подключены карты Google. Валидная и кроссбраузерная верстка.`,
+        getInTouch: "Связаться со мной",
     },
 };

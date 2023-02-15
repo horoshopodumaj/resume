@@ -49,7 +49,7 @@ export default function NavBar() {
                                         <LinkedInIcon
                                             sx={{
                                                 "&.MuiSvgIcon-root:hover": {
-                                                    color: "#0A66C2",
+                                                    color: "#20c997",
                                                 },
                                                 color: "white",
                                             }}
@@ -66,7 +66,7 @@ export default function NavBar() {
                                         <GitHubIcon
                                             sx={{
                                                 "&.MuiSvgIcon-root:hover": {
-                                                    color: "#1f3d5a",
+                                                    color: "#20c997",
                                                 },
                                                 color: "white",
                                             }}
