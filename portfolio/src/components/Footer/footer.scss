@@ -1,0 +1,13 @@
+.footer {
+    padding: 50px 0;
+    background-color: var(--bg2);
+    text-align: center;
+
+    &__author {
+        margin-bottom: 15px;
+    }
+    &__year,
+    &__author {
+        color: var(--font);
+    }
+}
