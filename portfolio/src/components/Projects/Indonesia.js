@@ -2,6 +2,7 @@ import { Box, IconButton, Modal } from "@mui/material";
 import { useRef, useState } from "react";
 import indonesia from "../../assets/img/projects/indonesia11.jpg";
 import indonesia2 from "../../assets/img/projects/indonesia2.jpg";
+import indonesia4 from "../../assets/img/projects/indonesia4.jpg";
 import Slider from "react-slick";
 import CloseIcon from "@mui/icons-material/Close";
 import { FormattedMessage } from "react-intl";
@@ -64,6 +65,10 @@ export default function Indonesia() {
                                         <img
                                             className="modal__img"
                                             src={indonesia2}
+                                            alt="indonesia"></img>
+                                        <img
+                                            className="modal__img"
+                                            src={indonesia4}
                                             alt="indonesia"></img>
                                     </Slider>
                                 </div>

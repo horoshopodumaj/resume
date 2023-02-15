@@ -1,9 +1,10 @@
 import { IconButton, Modal } from "@mui/material";
 import { useState } from "react";
-import recomm from "../../assets/img/projects/recom.jpg";
-import recomm2 from "../../assets/img/projects/recom2.jpg";
-import recomm3 from "../../assets/img/projects/recom3.jpg";
-import recomm4 from "../../assets/img/projects/recom4.jpg";
+import recomm from "../../assets/img/projects/recom11.jpg";
+import recomm2 from "../../assets/img/projects/recom21.jpg";
+import recomm3 from "../../assets/img/projects/recom31.jpg";
+import recomm4 from "../../assets/img/projects/recom41.jpg";
+import recomm5 from "../../assets/img/projects/recom51.jpg";
 import Slider from "react-slick";
 import CloseIcon from "@mui/icons-material/Close";
 import { FormattedMessage } from "react-intl";
@@ -69,6 +70,10 @@ export default function Recommend() {
                                         <img
                                             className="modal__img"
                                             src={recomm4}
+                                            alt="recomm"></img>
+                                        <img
+                                            className="modal__img"
+                                            src={recomm5}
                                             alt="recomm"></img>
                                     </Slider>
                                 </div>

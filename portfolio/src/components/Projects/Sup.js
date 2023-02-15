@@ -1,8 +1,11 @@
 import { IconButton, Modal } from "@mui/material";
 import { useState } from "react";
-import sup from "../../assets/img/projects/sup.jpg";
-import sup2 from "../../assets/img/projects/sup2.jpg";
-import sup3 from "../../assets/img/projects/sup3.jpg";
+import sup from "../../assets/img/projects/sup11.jpg";
+import sup2 from "../../assets/img/projects/sup21.jpg";
+import sup3 from "../../assets/img/projects/sup31.jpg";
+import sup4 from "../../assets/img/projects/sup41.jpg";
+import sup5 from "../../assets/img/projects/sup51.jpg";
+import sup6 from "../../assets/img/projects/sup61.jpg";
 import Slider from "react-slick";
 import CloseIcon from "@mui/icons-material/Close";
 import { FormattedMessage } from "react-intl";
@@ -62,6 +65,18 @@ export default function Sup() {
                                         <img
                                             className="modal__img"
                                             src={sup3}
+                                            alt="indonesia"></img>
+                                        <img
+                                            className="modal__img"
+                                            src={sup4}
+                                            alt="indonesia"></img>
+                                        <img
+                                            className="modal__img"
+                                            src={sup5}
+                                            alt="indonesia"></img>
+                                        <img
+                                            className="modal__img"
+                                            src={sup6}
                                             alt="indonesia"></img>
                                     </Slider>
                                 </div>

@@ -1,8 +1,8 @@
 import { IconButton, Modal } from "@mui/material";
 import { useState } from "react";
 import sasha from "../../assets/img/projects/sasha11.jpg";
-import sasha2 from "../../assets/img/projects/sasha2.jpg";
-import sasha3 from "../../assets/img/projects/sasha3.jpg";
+import sasha2 from "../../assets/img/projects/sasha21.jpg";
+import sasha3 from "../../assets/img/projects/sasha31.jpg";
 import Slider from "react-slick";
 import CloseIcon from "@mui/icons-material/Close";
 import { FormattedMessage } from "react-intl";

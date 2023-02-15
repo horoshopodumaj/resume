@@ -1,7 +1,7 @@
 import { IconButton, Modal } from "@mui/material";
 import { useState } from "react";
-import login from "../../assets/img/projects/login.jpg";
-import login2 from "../../assets/img/projects/login2.jpg";
+import login from "../../assets/img/projects/login11.jpg";
+import login2 from "../../assets/img/projects/login21.jpg";
 import Slider from "react-slick";
 import CloseIcon from "@mui/icons-material/Close";
 import { FormattedMessage } from "react-intl";

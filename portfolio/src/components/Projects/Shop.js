@@ -59,7 +59,7 @@ export default function Shop() {
                                         <img className="modal__img" src={shop} alt="shop"></img>
                                         <img className="modal__img" src={shop2} alt="shop"></img>
                                         <img className="modal__img" src={shop3} alt="shop"></img>
-                                        <img className="modal__img" src={shop4} alt="shop"></img>
+                                        {/* <img className="modal__img" src={shop4} alt="shop"></img> */}
                                         <img className="modal__img" src={shop5} alt="shop"></img>
                                     </Slider>
                                 </div>
