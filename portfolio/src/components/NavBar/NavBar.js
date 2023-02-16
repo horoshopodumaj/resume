@@ -17,7 +17,7 @@ export default function NavBar() {
         <header className="header">
             <nav className="navbar">
                 <div className="navbar__container">
-                    <a className="navbar__frame" href="#">
+                    <a className="navbar__frame" href="#home">
                         <span className="navbar__avatar">
                             <img className="navbar__img" src={mainFoto} alt="mainphoto" />
                         </span>

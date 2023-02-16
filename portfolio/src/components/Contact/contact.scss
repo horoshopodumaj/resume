@@ -179,5 +179,9 @@
             background-color: #1baa80;
             border-color: #1baa80;
         }
+        &:disabled {
+            pointer-events: none;
+            opacity: 0.5;
+        }
     }
 }

@@ -103,7 +103,7 @@ export default function Contact() {
                                 <button
                                     className="form__btn"
                                     type="submit"
-                                    disabled={buttonLoading && true}>
+                                    disabled={buttonLoading ? "disabled" : ""}>
                                     {buttonLoading ? (
                                         <FormattedMessage id="loading" />
                                     ) : (
