@@ -12,6 +12,8 @@ import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 import BackToTop from "./components/BackToTop/BackToTop";
 
+export const URL = process.env.REACT_APP_SERVER_URL;
+
 function App() {
     const [currentLocale, setCurrentLocale] = useState(
         localStorage.getItem("language") || LOCALES.EN

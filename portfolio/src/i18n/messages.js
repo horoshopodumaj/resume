@@ -80,6 +80,7 @@ export const messages = {
         shortMessageError: `Message is too short`,
         longMessageError: `Message is too long`,
         emailError: `Email not valid`,
+        loading: "Loading",
     },
     [LOCALES.RU]: {
         name: "Диана Муртазина",
@@ -143,5 +144,6 @@ export const messages = {
         shortMessageError: `Сообщение слишком короткое`,
         longMessageError: `Сообщение слишком длинное`,
         emailError: "Это не email",
+        loading: "Загрузка",
     },
 };
