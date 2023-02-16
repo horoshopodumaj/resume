@@ -64,6 +64,17 @@ export const messages = {
         yourMessage: "Your message",
         send: "Send",
         author: "Built by Diana Murtazina",
+        aboutDesc: `If you need professional HTML, CSS, JS, React coding, I can help you with this. 
+        `,
+        aboutSpec: `Specialization:`,
+        aboutSpecDesc: `
+        Front-end development cross-browser, valid, responsive, clean, and clear code.
+        Usability, accessibility, performance, adaptive.`,
+        aboutSkills: `Skills:`,
+        aboutSkillsDesc: `BEM`,
+        aboutReaspon: `Responsibility:
+        `,
+        aboutReasponDesc: `I always complete the job. I do not violate the terms.`,
     },
     [LOCALES.RU]: {
         name: "Диана Муртазина",
@@ -113,5 +124,14 @@ export const messages = {
         yourMessage: "Ваше сообщение",
         send: "Отправить",
         author: "Автор: Диана Муртазина",
+        aboutDesc: `Если вам нужен специалист со знанием HTML, CSS, JS, React, то я могу помочь вам.`,
+        aboutSpec: `Моя специализация:`,
+        aboutSpecDesc: `
+        Интерфейсная разработка, кроссбраузерный, валидный, отзывчивый, чистый и понятный код.
+                Удобство использования, доступность, производительность, адаптивность.`,
+        aboutSkills: `Мои навыки:`,
+        aboutSkillsDesc: `БЭМ`,
+        aboutReaspon: `Моя ответственность:`,
+        aboutReasponDesc: `Я всегда довожу работу до конца. Я не нарушаю условий.`,
     },
 };

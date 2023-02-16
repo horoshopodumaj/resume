@@ -23,13 +23,28 @@ export default function About() {
                             </span>
                         </h3>
                         <p className="about__desc">
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores
-                            recusandae itaque excepturi hic consequatur repellendus ad magni
-                            molestias assumenda in, perspiciatis eligendi obcaecati nulla veniam
-                            dicta? Beatae voluptatum deserunt dolor! Lorem ipsum dolor sit amet
-                            consectetur, adipisicing elit. Voluptatem, praesentium tenetur, impedit
-                            voluptas vero aliquam recusandae ex nobis earum, tempore voluptatibus
-                            est eos enim commodi iure repellat perspiciatis cum facere!
+                            <FormattedMessage id="aboutDesc" />
+                        </p>
+                        <p className="about__desc">
+                            <span className="about__caption">
+                                <FormattedMessage id="aboutSpec" />
+                            </span>
+                            <FormattedMessage id="aboutSpecDesc" />
+                        </p>
+                        <p className="about__desc">
+                            <span className="about__caption">
+                                <FormattedMessage id="aboutSkills" />
+                            </span>
+                            - HTML, CSS, SCSS; <br /> - JavaScript, jQuery; <br /> - React.js;{" "}
+                            <br /> - <FormattedMessage id="aboutSkillsDesc" />, Materialize, MUI,
+                            FlexBox, Grid;
+                            <br /> - Gulp
+                        </p>
+                        <p className="about__desc">
+                            <span className="about__caption">
+                                <FormattedMessage id="aboutReaspon" />
+                            </span>
+                            <FormattedMessage id="aboutReasponDesc" />
                         </p>
                     </div>
                     <div className="about__info">

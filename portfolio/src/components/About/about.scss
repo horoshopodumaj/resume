@@ -108,6 +108,11 @@
         color: var(--active);
     }
 
+    &__caption {
+        color: var(--active);
+        display: block;
+    }
+
     &__desc {
         font-weight: 400;
         line-height: 28px;
@@ -138,6 +143,7 @@
 
     &__email a {
         color: var(--active);
+        word-break: break-all;
     }
 }
 
