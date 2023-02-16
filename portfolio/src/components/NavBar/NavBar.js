@@ -3,6 +3,7 @@ import "./navbar.scss";
 import mainFoto from "../../assets/img/my_photo.jpg";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
+import TelegramIcon from "@mui/icons-material/Telegram";
 import { Box, List, ListItem, ListItemIcon } from "@mui/material";
 import { Link } from "react-router-dom";
 import LocalePicker from "../../LocalePicker";
@@ -40,8 +41,10 @@ export default function NavBar() {
                     </div>
                     <Box sx={{ display: "flex" }} className="navbar__box">
                         <List className="navbar__social">
-                            <ListItem sx={{ padding: 0, paddingRight: "10px" }}>
-                                <Link>
+                            <ListItem sx={{ padding: 0, paddingRight: "8px" }}>
+                                <Link
+                                    to="https://www.linkedin.com/in/diana-murtazina"
+                                    target="_blank">
                                     <ListItemIcon
                                         sx={{
                                             minWidth: "fit-content",
@@ -57,13 +60,30 @@ export default function NavBar() {
                                     </ListItemIcon>
                                 </Link>
                             </ListItem>
-                            <ListItem sx={{ padding: 0, paddingRight: "10px" }}>
-                                <Link>
+                            <ListItem sx={{ padding: 0, paddingRight: "8px" }}>
+                                <Link to="https://github.com/horoshopodumaj" target="_blank">
                                     <ListItemIcon
                                         sx={{
                                             minWidth: "fit-content",
                                         }}>
                                         <GitHubIcon
+                                            sx={{
+                                                "&.MuiSvgIcon-root:hover": {
+                                                    color: "#20c997",
+                                                },
+                                                color: "white",
+                                            }}
+                                        />
+                                    </ListItemIcon>
+                                </Link>
+                            </ListItem>
+                            <ListItem sx={{ padding: 0, paddingRight: "8px" }}>
+                                <Link to="https://t.me/horoshopodumaj" target="_blank">
+                                    <ListItemIcon
+                                        sx={{
+                                            minWidth: "fit-content",
+                                        }}>
+                                        <TelegramIcon
                                             sx={{
                                                 "&.MuiSvgIcon-root:hover": {
                                                     color: "#20c997",
