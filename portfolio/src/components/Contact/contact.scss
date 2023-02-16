@@ -106,17 +106,22 @@
         flex-wrap: wrap;
     }
 
-    &__input {
+    &__inputcontainer {
         width: 48%;
+        margin-bottom: 24px;
+        @media (max-width: 730px) {
+            width: 100%;
+        }
+    }
+
+    &__input {
+        width: 100%;
         background: var(--bg2);
         border: 1px solid var(--bg2);
         color: var(--font);
         padding: 13px 15px;
         border-radius: 6px;
-        margin-bottom: 24px;
-        @media (max-width: 730px) {
-            width: 100%;
-        }
+        font-family: "Poppins", sans-serif;
         &:focus {
             border-color: var(--focus);
             box-shadow: 0 0 5px rgb(128 189 255 / 50%);
@@ -129,9 +134,13 @@
         }
     }
 
-    &__area {
+    &__areacontainer {
         width: 100%;
         margin-bottom: 24px;
+    }
+
+    &__area {
+        width: 100%;
         background: var(--bg2);
         border: 1px solid var(--bg2);
         color: var(--font);
@@ -139,6 +148,7 @@
         border-radius: 6px;
         min-height: 190px;
         resize: none;
+        font-family: "Poppins", sans-serif;
         &:focus {
             border-color: var(--focus);
             box-shadow: 0 0 5px rgb(128 189 255 / 50%);

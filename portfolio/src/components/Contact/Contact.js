@@ -1,9 +1,23 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { FormattedMessage } from "react-intl";
 import { useFormatMessage } from "../../hooks/useFormatMessage";
+import InlineError from "../InlineError";
+import { validateEmail, validateMessage, validateName } from "../Validation";
 import "./contact.scss";
 
 export default function Contact() {
+    const [name, setName] = useState("");
+    const [email, setEmail] = useState("");
+    const [message, setMessage] = useState("");
+    const [nameError, setNameError] = useState();
+    const [emailError, setEmailError] = useState();
+    const [messageError, setMessageError] = useState();
+
+    useEffect(() => {
+        validateName({ name, setNameError });
+        validateEmail({ email, setEmailError });
+        validateMessage({ message, setMessageError });
+    }, [name, email, message]);
     return (
         <section id="contact" className="contact">
             <div className="container">
@@ -30,17 +44,36 @@ export default function Contact() {
                             <FormattedMessage id="sendNote" />
                         </h2>
                         <form className="form__content">
-                            <input
-                                className="form__input"
-                                placeholder={useFormatMessage("yourName")}
-                                type="text"></input>
-                            <input
-                                className="form__input"
-                                placeholder={useFormatMessage("yourEmail")}
-                                type="email"></input>
-                            <textarea
-                                className="form__area"
-                                placeholder={useFormatMessage("yourMessage")}></textarea>
+                            <div className="form__inputcontainer">
+                                <input
+                                    className="form__input"
+                                    value={name}
+                                    onChange={(event) => setName(event.target.value)}
+                                    required
+                                    placeholder={useFormatMessage("yourName")}
+                                    type="text"></input>
+                                {nameError && <InlineError error={nameError} />}
+                            </div>
+                            <div className="form__inputcontainer">
+                                <input
+                                    className="form__input"
+                                    value={email}
+                                    onChange={(event) => setEmail(event.target.value)}
+                                    required
+                                    placeholder={useFormatMessage("yourEmail")}
+                                    type="email"></input>
+                                {emailError && <InlineError error={emailError} />}
+                            </div>
+                            <div className="form__areacontainer">
+                                <textarea
+                                    className="form__area"
+                                    value={message}
+                                    onChange={(event) => setMessage(event.target.value)}
+                                    required
+                                    placeholder={useFormatMessage("yourMessage")}></textarea>
+                                {messageError && <InlineError error={messageError} />}
+                            </div>
+
                             <button className="form__btn" type="submit">
                                 <FormattedMessage id="send" />
                             </button>

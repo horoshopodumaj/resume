@@ -75,6 +75,11 @@ export const messages = {
         aboutReaspon: `Responsibility:
         `,
         aboutReasponDesc: `I always complete the job. I do not violate the terms.`,
+        shortNameError: `Name is too short`,
+        longNameError: `Name is too long`,
+        shortMessageError: `Message is too short`,
+        longMessageError: `Message is too long`,
+        emailError: `Email not valid`,
     },
     [LOCALES.RU]: {
         name: "Диана Муртазина",
@@ -133,5 +138,10 @@ export const messages = {
         aboutSkillsDesc: `БЭМ`,
         aboutReaspon: `Моя ответственность:`,
         aboutReasponDesc: `Я всегда довожу работу до конца. Я не нарушаю условий.`,
+        shortNameError: "Имя слишком короткое",
+        longNameError: `Имя слишком длинное`,
+        shortMessageError: `Сообщение слишком короткое`,
+        longMessageError: `Сообщение слишком длинное`,
+        emailError: "Это не email",
     },
 };
