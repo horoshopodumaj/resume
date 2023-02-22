@@ -12,7 +12,7 @@ import { FormattedMessage } from "react-intl";
 export default function NavBar() {
     const navItems = ["home", "about", "projects", "contact"];
     const [active, setActive] = useState(false);
-    const [activeLink, setActiveLink] = useState(false);
+    let [activeLink, setActiveLink] = useState(0);
     return (
         <header className="header">
             <nav className="navbar">
@@ -27,12 +27,16 @@ export default function NavBar() {
                     </a>
                     <div className={active ? "navbar__menu navbar__menu--active" : `navbar__menu`}>
                         <ul className="navbar__list header__nav">
-                            {navItems.map((item) => (
+                            {navItems.map((item, index) => (
                                 <li key={item} className="navbar__item">
                                     <a
-                                        className="navbar__link"
+                                        className={
+                                            activeLink === index
+                                                ? "navbar__link navbar__link--active"
+                                                : "navbar__link"
+                                        }
                                         href={`#${item}`}
-                                        onClick={() => setActiveLink(!activeLink)}>
+                                        onClick={() => setActiveLink((activeLink = index))}>
                                         <FormattedMessage id={`${item}`} />
                                     </a>
                                 </li>

@@ -135,6 +135,9 @@
         display: block;
         line-height: 24px;
         transition: all 0.5s ease;
+        &--active {
+            color: var(--active);
+        }
         &:hover {
             color: var(--active);
         }

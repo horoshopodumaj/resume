@@ -4,7 +4,7 @@ import { LOCALES } from "./i18n/locales";
 import { messages } from "./i18n/messages";
 import GlobalContext from "./context/GlobalContext";
 import NavBar from "./components/NavBar/NavBar";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Home from "./components/Home/Home";
 import About from "./components/About/About";
 import Projects from "./components/Projects/Projects";
@@ -18,6 +18,24 @@ function App() {
     const [currentLocale, setCurrentLocale] = useState(
         localStorage.getItem("language") || LOCALES.EN
     );
+
+    // const [scrollTop, setScrollTop] = useState(0);
+    // const [hash, setHash] = useState("");
+
+    // useEffect(() => {
+    //     const handleScroll = (event) => {
+    //         setScrollTop(window.scrollY);
+    //         console.log(event.currentTarget.location);
+    //         setHash(event.currentTarget.location.hash.split("#")[1]);
+    //         console.log(event.currentTarget.location.hash);
+    //     };
+
+    //     window.addEventListener("scroll", handleScroll);
+
+    //     return () => {
+    //         window.removeEventListener("scroll", handleScroll);
+    //     };
+    // }, []);
 
     return (
         <GlobalContext.Provider value={{ currentLocale, setCurrentLocale }}>
