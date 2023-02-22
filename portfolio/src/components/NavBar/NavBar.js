@@ -9,10 +9,10 @@ import { Link } from "react-router-dom";
 import LocalePicker from "../../LocalePicker";
 import { FormattedMessage } from "react-intl";
 
-export default function NavBar() {
+export default function NavBar({ onChangeActiveLink, activeLink }) {
     const navItems = ["home", "about", "projects", "contact"];
     const [active, setActive] = useState(false);
-    let [activeLink, setActiveLink] = useState(0);
+    //let [activeLink, setActiveLink] = useState(0);
     return (
         <header className="header">
             <nav className="navbar">
@@ -36,7 +36,7 @@ export default function NavBar() {
                                                 : "navbar__link"
                                         }
                                         href={`#${item}`}
-                                        onClick={() => setActiveLink((activeLink = index))}>
+                                        onClick={() => onChangeActiveLink(index)}>
                                         <FormattedMessage id={`${item}`} />
                                     </a>
                                 </li>

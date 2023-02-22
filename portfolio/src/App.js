@@ -4,7 +4,7 @@ import { LOCALES } from "./i18n/locales";
 import { messages } from "./i18n/messages";
 import GlobalContext from "./context/GlobalContext";
 import NavBar from "./components/NavBar/NavBar";
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import Home from "./components/Home/Home";
 import About from "./components/About/About";
 import Projects from "./components/Projects/Projects";
@@ -19,23 +19,36 @@ function App() {
         localStorage.getItem("language") || LOCALES.EN
     );
 
-    // const [scrollTop, setScrollTop] = useState(0);
-    // const [hash, setHash] = useState("");
+    let [activeLink, setActiveLink] = useState(0);
 
-    // useEffect(() => {
-    //     const handleScroll = (event) => {
-    //         setScrollTop(window.scrollY);
-    //         console.log(event.currentTarget.location);
-    //         setHash(event.currentTarget.location.hash.split("#")[1]);
-    //         console.log(event.currentTarget.location.hash);
-    //     };
+    const onChangeActiveLink = useCallback((index) => {
+        setActiveLink((activeLink = index));
+        console.log(index);
+    }, []);
 
-    //     window.addEventListener("scroll", handleScroll);
+    const ref = useRef(null);
+    useEffect(() => {
+        const handleScroll = (event) => {
+            if (window.scrollY === 0) {
+                setActiveLink(0);
+            }
+            console.log(window.scrollY);
+            console.log(window);
+            console.log(activeLink);
+            const rect = ref.current;
+            console.log(rect);
+            //console.log(scrollTop);
+            //console.log(event.currentTarget.location);
+            // setHash(event.currentTarget.location.hash.split("#")[1]);
+            // console.log(event.currentTarget.location.hash);
+        };
 
-    //     return () => {
-    //         window.removeEventListener("scroll", handleScroll);
-    //     };
-    // }, []);
+        window.addEventListener("scroll", handleScroll);
+
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, []);
 
     return (
         <GlobalContext.Provider value={{ currentLocale, setCurrentLocale }}>
@@ -50,8 +63,8 @@ function App() {
                 messages={messages[currentLocale]}
                 locale={currentLocale}
                 defaultLocale={LOCALES.EN}>
-                <div className="page">
-                    <NavBar />
+                <div className="page" ref={ref}>
+                    <NavBar onChangeActiveLink={onChangeActiveLink} activeLink={activeLink} />
                     <Home />
                     <About />
                     <Projects />
