@@ -26,21 +26,26 @@ function App() {
         console.log(index);
     }, []);
 
-    const ref = useRef(null);
+    const aboutRef = useRef();
+    const projectsRef = useRef();
+    const contactRef = useRef(null);
     useEffect(() => {
         const handleScroll = (event) => {
             if (window.scrollY === 0) {
                 setActiveLink(0);
+            } else if (
+                aboutRef.current.offsetTop - window.scrollY < window.innerHeight / 2 &&
+                projectsRef.current.offsetTop - window.scrollY >= window.innerHeight / 2
+            ) {
+                setActiveLink(1);
+            } else if (
+                projectsRef.current.offsetTop - window.scrollY < window.innerHeight / 2 &&
+                contactRef.current.offsetTop - window.scrollY >= window.innerHeight / 2
+            ) {
+                setActiveLink(2);
+            } else if (contactRef.current.offsetTop - window.scrollY < window.innerHeight / 2) {
+                setActiveLink(3);
             }
-            console.log(window.scrollY);
-            console.log(window);
-            console.log(activeLink);
-            const rect = ref.current;
-            console.log(rect);
-            //console.log(scrollTop);
-            //console.log(event.currentTarget.location);
-            // setHash(event.currentTarget.location.hash.split("#")[1]);
-            // console.log(event.currentTarget.location.hash);
         };
 
         window.addEventListener("scroll", handleScroll);
@@ -63,12 +68,12 @@ function App() {
                 messages={messages[currentLocale]}
                 locale={currentLocale}
                 defaultLocale={LOCALES.EN}>
-                <div className="page" ref={ref}>
+                <div className="page">
                     <NavBar onChangeActiveLink={onChangeActiveLink} activeLink={activeLink} />
                     <Home />
-                    <About />
-                    <Projects />
-                    <Contact />
+                    <About ref={aboutRef} />
+                    <Projects ref={projectsRef} />
+                    <Contact ref={contactRef} />
                     <Footer />
                     <BackToTop />
                 </div>

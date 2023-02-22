@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { forwardRef, useEffect, useState } from "react";
 import { FormattedMessage } from "react-intl";
 import { SendEmail } from "../../API";
 import { useFormatMessage } from "../../hooks/useFormatMessage";
@@ -8,7 +8,7 @@ import "./contact.scss";
 import { toast } from "react-toastify";
 import Toast from "../Toast/Toast";
 
-export default function Contact() {
+const Contact = forwardRef((props, contactRef) => {
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [message, setMessage] = useState("");
@@ -45,7 +45,7 @@ export default function Contact() {
     return (
         <>
             <Toast />
-            <section id="contact" className="contact">
+            <section id="contact" className="contact" ref={contactRef}>
                 <div className="container">
                     <div className="contact__header">
                         <h2 className="contact__title">
@@ -117,4 +117,6 @@ export default function Contact() {
             </section>
         </>
     );
-}
+});
+
+export default Contact;

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { forwardRef } from "react";
 import { FormattedMessage } from "react-intl";
 import "./projects.scss";
 import Indonesia from "./Indonesia";
@@ -10,9 +10,9 @@ import Recommend from "./Recommend";
 import Login from "./Login";
 import Shop from "./Shop";
 
-export default function Projects() {
+const Projects = forwardRef((props, projectsRef) => {
     return (
-        <section className="projects" id="projects">
+        <section className="projects" id="projects" ref={projectsRef}>
             <div className="container">
                 <div className="projects__header">
                     <h2 className="projects__title">
@@ -35,4 +35,6 @@ export default function Projects() {
             </div>
         </section>
     );
-}
+});
+
+export default Projects;

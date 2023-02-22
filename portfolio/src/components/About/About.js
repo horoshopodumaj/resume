@@ -1,9 +1,10 @@
+import { forwardRef } from "react";
 import { FormattedMessage } from "react-intl";
 import "./about.scss";
 
-export default function About() {
+const About = forwardRef((props, aboutRef) => {
     return (
-        <section id="about" className="about">
+        <section id="about" className="about" ref={aboutRef}>
             <div className="container">
                 <div className="about__header">
                     <h2 className="about__title">
@@ -128,4 +129,6 @@ export default function About() {
             </div>
         </section>
     );
-}
+});
+
+export default About;
