@@ -36,7 +36,7 @@ const About = forwardRef((props, aboutRef) => {
                             <span className="about__caption">
                                 <FormattedMessage id="aboutSkills" />
                             </span>
-                            - HTML, CSS, SCSS; <br /> - JavaScript, jQuery; <br /> - React.js;{" "}
+                            - HTML, CSS, SCSS; <br /> - JavaScript, Typescript; <br /> - React.js;{" "}
                             <br /> - <FormattedMessage id="aboutSkillsDesc" />, Materialize, MUI,
                             FlexBox, Grid;
                             <br /> - Gulp
@@ -122,6 +122,15 @@ const About = forwardRef((props, aboutRef) => {
                             </div>
                             <div className="skills__bar">
                                 <div className="skills__line" style={{ width: "50%" }}></div>
+                            </div>
+                        </div>
+                        <div className="skills__item">
+                            <div className="skills__content">
+                                <p className="skills__text">Typescript</p>
+                                <p className="skills__num">30%</p>
+                            </div>
+                            <div className="skills__bar">
+                                <div className="skills__line" style={{ width: "30%" }}></div>
                             </div>
                         </div>
                     </div>
