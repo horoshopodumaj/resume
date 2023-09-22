@@ -1,14 +1,14 @@
 import React, { forwardRef } from "react";
 import { FormattedMessage } from "react-intl";
-import "./projects.scss";
-import Indonesia from "./Indonesia";
-import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Sup from "./Sup";
+import "slick-carousel/slick/slick.css";
+import Blog from "./Blog";
 import Brechko from "./Brechko";
-import Recommend from "./Recommend";
 import Login from "./Login";
+import Recommend from "./Recommend";
 import Shop from "./Shop";
+import Sup from "./Sup";
+import "./projects.scss";
 
 const Projects = forwardRef((props, projectsRef) => {
     return (
@@ -24,9 +24,9 @@ const Projects = forwardRef((props, projectsRef) => {
                 </div>
                 <div className="projects__inner">
                     <div className="projects__items">
-                        <Indonesia />
-                        <Sup />
                         <Brechko />
+                        <Sup />
+                        <Blog />
                         <Recommend />
                         <Login />
                         <Shop />

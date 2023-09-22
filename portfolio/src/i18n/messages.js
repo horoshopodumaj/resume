@@ -17,13 +17,11 @@ export const messages = {
         skills: "My skills",
         portfolio: "portfolio",
         indonesiaTitle: "Website For Travel To Indonesia",
-        indonesiaDesc:
-            "Layout of a website for traveling to Indonesia. The site has implemented a burger menu, a gallery in pure Javascript. The layout is adaptive.",
+        indonesiaDesc: "Layout of a website for traveling to Indonesia. The site has implemented a burger menu, a gallery in pure Javascript. The layout is adaptive.",
         landingTitle: "Landing Page Layout",
         supDesc: `Layout of a beautiful adaptive landing page for sale of sup board. The landing page contains two galleries of images with an unusual design. Grids were used in the layout. Gulp was used when building the project.`,
         sashaTitle: "Portfolio layout",
-        sashaDesc:
-            "The portfolio is written in React, using the MUI library. It is possible to switch languages.",
+        sashaDesc: "The portfolio is written in React, using the MUI library. It is possible to switch languages.",
         loginTitle: "Table with users",
         loginDesc: `The application is implemented using technologies: React,
         Node.js, Express, MongoDB. Unauthenticated users do not have
@@ -64,12 +62,22 @@ export const messages = {
         yourMessage: "Your message",
         send: "Send",
         author: "Built by Diana Murtazina",
-        aboutDesc: `If you need professional HTML, CSS, JS, React coding, I can help you with this. 
+        aboutDesc: `with experience and knowledge in the field of web technologies. My passion is creating user interfaces that combine functionality and aesthetics. My skills cover a wide range of technologies and tools for developing modern web applications. 
         `,
-        aboutSpec: `Specialization:`,
+        aboutExp: `My experience includes working on various projects where I:
+        `,
+        aboutExp1: `
+        • Optimized performance and improved user experience through the creation of clean and efficient code.
+       `,
+        aboutExp2: `
+        • Developed cross-browser and adaptive interfaces, ensuring their responsiveness on different devices and browsers.
+       `,
+        aboutExp3: `
+        • Interacted with servers to send requests and receive data, ensuring the dynamism and relevance of content on web pages.
+       `,
+        aboutSpec: `Goal:`,
         aboutSpecDesc: `
-        Front-end development cross-browser, valid, responsive, clean, and clear code.
-        Usability, accessibility, performance, adaptive.`,
+        My goal is to continue to deepen my knowledge and skills in the field of frontend development in order to create interfaces that attract users and benefit customers. I am always ready for new challenges and projects that require interesting solutions.`,
         aboutSkills: `Skills:`,
         aboutSkillsDesc: `BEM`,
         aboutReaspon: `Responsibility:
@@ -81,6 +89,14 @@ export const messages = {
         longMessageError: `Message is too long`,
         emailError: `Email not valid`,
         loading: "Loading",
+        blogTitle: `Blog site`,
+        blogDesc: `To write an application, use: Next.js, Node.js, Prisma, MongoDB, Firebase. Authorization is available to users who have a Google account.
+        Next-auth is used for registration. 
+        Site visitors see all posts and comments.
+        Only registered users can write a post and comments on posts.
+        Filtering by post categories is available. When writing a post, you can insert an image, a video. The text of the post can be stylized (bold text, italics, etc.) by highlighting part of the text.
+        Media files used in posts are stored in Firebase.
+        The application implements dark and light themes. The site is adaptive, there is a burger menu.`,
     },
     [LOCALES.RU]: {
         name: "Диана Муртазина",
@@ -98,13 +114,11 @@ export const messages = {
         skills: "Мои навыки",
         portfolio: "портфолио",
         indonesiaTitle: "Сайт для путешествий в Индонезию",
-        indonesiaDesc:
-            "Верстка сайт для путешествий в Индонезию. На сайте реализовано бургер  меню, галерея на чистом Javascript. Верстка адаптивная.",
+        indonesiaDesc: "Верстка сайт для путешествий в Индонезию. На сайте реализовано бургер  меню, галерея на чистом Javascript. Верстка адаптивная.",
         landingTitle: "Верстка лендинга",
         supDesc: `Верстка красивого адаптивного лендинга для продажи сап борда. Лендинг содержит две галереи изображений с необычным дизайном. При верстке использованы гриды. При сборке проекта использован Gulp.`,
         sashaTitle: "Верстка портфолио",
-        sashaDesc:
-            "Портфолио написано на React, с использованием библиотеки MUI. Есть возможность переключения языков.",
+        sashaDesc: "Портфолио написано на React, с использованием библиотеки MUI. Есть возможность переключения языков.",
         loginTitle: "Таблица пользователей",
         loginDesc: `Приложение реализовано с помощью технологий: React, Node.js, Express, MongoDB. Неаутентифицированные пользователи не имеют доступа к управлению пользователями (доступ только к форме регистрации или форме аутентификации). Аутентифицированные пользователи видят таблицу "пользователи" (идентификатор, именем, мылом, датой регистрации, датой последнего логина, статусом) с пользователями. Таблица левой колонкой содержит чек-боксы для множественного выделения, в заголовке колонки чек-бокс "выделить все/снять выделение". Над таблицей тулбар с действиями: Block, Unblock, Delete.
         Пользователь может удалить или заблокировать себя — при этом сразу должен быть разлогинен. Если кто-то другой блокирует или удаляет пользователя, то при любом следующем действии пользователь переправляется на страницу логина. При регистрации должна быть возможность использовать любой пароль, даже из одного символа. Заблокированный пользователь не может войти, удаленный может заново зарегистрироваться.`,
@@ -130,12 +144,23 @@ export const messages = {
         yourMessage: "Ваше сообщение",
         send: "Отправить",
         author: "Автор: Диана Муртазина",
-        aboutDesc: `Если вам нужен специалист со знанием HTML, CSS, JS, React, то я могу помочь вам.`,
-        aboutSpec: `Моя специализация:`,
+        aboutDesc: `с опытом и знаниями в области веб-технологий. Моя страсть — создание пользовательских интерфейсов, которые сочетают в себе функциональность и эстетику. Мои навыки охватывают широкий спектр технологий и инструментов для разработки современных веб-приложений.
+        `,
+        aboutExp: `Мой опыт включает работу над различными проектами, где я:
+        `,
+        aboutExp1: `
+        • Оптимизировала производительность и улучшала пользовательский опыт через создание чистого и эффективного кода.
+       `,
+        aboutExp2: `
+        • Разрабатывала кроссбраузерные и адаптивные интерфейсы, обеспечивая их отзывчивость на разных устройствах и браузерах.
+       `,
+        aboutExp3: `
+        • Взаимодействовала с серверами для отправки запросов и получения данных, обеспечивая динамичность и актуальность контента на веб-страницах.
+       `,
+        aboutSpec: `Цель:`,
         aboutSpecDesc: `
-        Интерфейсная разработка, кроссбраузерный, валидный, отзывчивый, чистый и понятный код.
-                Удобство использования, доступность, производительность, адаптивность.`,
-        aboutSkills: `Мои навыки:`,
+        Моя цель - продолжать углублять свои знания и навыки в сфере фронтенд-разработки, чтобы создавать интерфейсы, которые привлекают пользователей и приносят пользу клиентам. Я всегда готова к новым вызовам и проектам, которые требуют интересных решений. `,
+        aboutSkills: `Навыки:`,
         aboutSkillsDesc: `БЭМ`,
         aboutReaspon: `Моя ответственность:`,
         aboutReasponDesc: `Я всегда довожу работу до конца. Я не нарушаю условий.`,
@@ -145,5 +170,13 @@ export const messages = {
         longMessageError: `Сообщение слишком длинное`,
         emailError: "Это не email",
         loading: "Загрузка",
+        blogTitle: `Сайт блога`,
+        blogDesc: `Для написания приложения используются: Next.js, Node.js, Prisma, MongoDB, Firebase. Авторизация доступна пользователям, имеющим аккаунт Google.
+        Для регистрации используется next-auth. 
+        Посетители сайта видят все посты и комментарии.
+        Только зарегистрированные пользователи могут написать пост и комментарии к постам.
+        Доступна фильтрация по категориям постов. При написании поста можно вставить изображение, видео. Текст поста можно стилизовать (жирный текст, курсив и т.д.), выделив часть текста.
+        Медиа файлы, используемые в постах хранятся в Firebase.
+        В приложении реализованы темная и светлая темы. Сайт адаптивен, есть бургер-меню.`,
     },
 };

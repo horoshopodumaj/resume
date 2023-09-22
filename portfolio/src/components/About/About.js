@@ -27,6 +27,19 @@ const About = forwardRef((props, aboutRef) => {
                             <FormattedMessage id="aboutDesc" />
                         </p>
                         <p className="about__desc">
+                            <FormattedMessage id="aboutExp" />
+                        </p>
+                        <p className="about__desc">
+                            <FormattedMessage id="aboutExp1" />
+                        </p>
+                        <p className="about__desc">
+                            <FormattedMessage id="aboutExp2" />
+                        </p>
+                        <p className="about__desc">
+                            <FormattedMessage id="aboutExp3" />
+                        </p>
+
+                        <p className="about__desc">
                             <span className="about__caption">
                                 <FormattedMessage id="aboutSpec" />
                             </span>
@@ -36,17 +49,15 @@ const About = forwardRef((props, aboutRef) => {
                             <span className="about__caption">
                                 <FormattedMessage id="aboutSkills" />
                             </span>
-                            - HTML, CSS, SCSS; <br /> - JavaScript, Typescript; <br /> - React.js;{" "}
-                            <br /> - <FormattedMessage id="aboutSkillsDesc" />, Materialize, MUI,
-                            FlexBox, Grid;
+                            - HTML, CSS, SCSS; <br /> - JavaScript, Typescript; <br /> - React.js, Next.js; <br /> - <FormattedMessage id="aboutSkillsDesc" />, Materialize, MUI, FlexBox, Grid;
                             <br /> - Gulp
                         </p>
-                        <p className="about__desc">
+                        {/* <p className="about__desc">
                             <span className="about__caption">
                                 <FormattedMessage id="aboutReaspon" />
                             </span>
                             <FormattedMessage id="aboutReasponDesc" />
-                        </p>
+                        </p> */}
                     </div>
                     <div className="about__info">
                         <ul className="about__list">
@@ -58,9 +69,7 @@ const About = forwardRef((props, aboutRef) => {
                             </li>
                             <li className="about__email">
                                 <span className="about__item">Email:</span>
-                                <a href="mailto:dianamurtazina.job@gmail.com">
-                                    dianamurtazina.job@gmail.com
-                                </a>
+                                <a href="mailto:dianamurtazina.job@gmail.com">dianamurtazina.job@gmail.com</a>
                             </li>
                         </ul>
                     </div>
@@ -73,10 +82,10 @@ const About = forwardRef((props, aboutRef) => {
                         <div className="skills__item">
                             <div className="skills__content">
                                 <p className="skills__text">HTML</p>
-                                <p className="skills__num">95%</p>
+                                <p className="skills__num">90%</p>
                             </div>
                             <div className="skills__bar">
-                                <div className="skills__line" style={{ width: "95%" }}></div>
+                                <div className="skills__line" style={{ width: "90%" }}></div>
                             </div>
                         </div>
                         <div className="skills__item">
@@ -100,10 +109,10 @@ const About = forwardRef((props, aboutRef) => {
                         <div className="skills__item">
                             <div className="skills__content">
                                 <p className="skills__text">React</p>
-                                <p className="skills__num">60%</p>
+                                <p className="skills__num">65%</p>
                             </div>
                             <div className="skills__bar">
-                                <div className="skills__line" style={{ width: "60%" }}></div>
+                                <div className="skills__line" style={{ width: "65%" }}></div>
                             </div>{" "}
                         </div>
                         <div className="skills__item">
@@ -117,6 +126,15 @@ const About = forwardRef((props, aboutRef) => {
                         </div>
                         <div className="skills__item">
                             <div className="skills__content">
+                                <p className="skills__text">Next.js</p>
+                                <p className="skills__num">40%</p>
+                            </div>
+                            <div className="skills__bar">
+                                <div className="skills__line" style={{ width: "40%" }}></div>
+                            </div>{" "}
+                        </div>
+                        <div className="skills__item">
+                            <div className="skills__content">
                                 <p className="skills__text">Redux Toolkit</p>
                                 <p className="skills__num">50%</p>
                             </div>
@@ -127,10 +145,10 @@ const About = forwardRef((props, aboutRef) => {
                         <div className="skills__item">
                             <div className="skills__content">
                                 <p className="skills__text">Typescript</p>
-                                <p className="skills__num">30%</p>
+                                <p className="skills__num">40%</p>
                             </div>
                             <div className="skills__bar">
-                                <div className="skills__line" style={{ width: "30%" }}></div>
+                                <div className="skills__line" style={{ width: "40%" }}></div>
                             </div>
                         </div>
                     </div>
