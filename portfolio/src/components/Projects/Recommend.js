@@ -1,15 +1,14 @@
+import CloseIcon from "@mui/icons-material/Close";
 import { IconButton, Modal } from "@mui/material";
+import "overlayscrollbars/overlayscrollbars.css";
 import { useState } from "react";
+import { FormattedMessage } from "react-intl";
+import Slider from "react-slick";
 import recomm from "../../assets/img/projects/recom11.jpg";
 import recomm2 from "../../assets/img/projects/recom21.jpg";
 import recomm3 from "../../assets/img/projects/recom31.jpg";
 import recomm4 from "../../assets/img/projects/recom41.jpg";
 import recomm5 from "../../assets/img/projects/recom51.jpg";
-import Slider from "react-slick";
-import CloseIcon from "@mui/icons-material/Close";
-import { FormattedMessage } from "react-intl";
-import { OverlayScrollbars } from "overlayscrollbars";
-import "overlayscrollbars/overlayscrollbars.css";
 
 export default function Recommend() {
     const [open, setOpen] = useState(false);
@@ -41,9 +40,7 @@ export default function Recommend() {
                 aria-describedby="modal-modal-description">
                 <div className="modal__container">
                     <div className="modal__body">
-                        <IconButton
-                            onClick={handleClose}
-                            sx={{ padding: 0, paddingLeft: "5px", float: "right" }}>
+                        <IconButton onClick={handleClose} sx={{ padding: 0, paddingLeft: "5px", float: "right" }}>
                             <CloseIcon
                                 sx={{
                                     "&:hover": {
@@ -61,41 +58,25 @@ export default function Recommend() {
                                 <div className="modal__gallery">
                                     <Slider {...settings}>
                                         <img className="modal__img" src={recomm} alt="recomm"></img>
-                                        <img
-                                            className="modal__img"
-                                            src={recomm2}
-                                            alt="recomm"></img>
-                                        <img
-                                            className="modal__img"
-                                            src={recomm3}
-                                            alt="recomm"></img>
-                                        <img
-                                            className="modal__img"
-                                            src={recomm4}
-                                            alt="recomm"></img>
-                                        <img
-                                            className="modal__img"
-                                            src={recomm5}
-                                            alt="recomm"></img>
+                                        <img className="modal__img" src={recomm2} alt="recomm"></img>
+                                        <img className="modal__img" src={recomm3} alt="recomm"></img>
+                                        <img className="modal__img" src={recomm4} alt="recomm"></img>
+                                        <img className="modal__img" src={recomm5} alt="recomm"></img>
                                     </Slider>
                                 </div>
                                 <div className="modal__info">
-                                    <div className="modal__tech">
-                                        React, Node.js, Express, Postgresql, Sequelize
-                                    </div>
+                                    <div className="modal__tech">React, Node.js, Express, Postgresql, Sequelize</div>
                                     <div className="modal__desc">
                                         <FormattedMessage id="recommendDesc" />
                                     </div>
                                     <div className="modal__buttons">
-                                        <form
-                                            action="https://github.com/horoshopodumaj/recommendations"
-                                            target="_blank">
+                                        <form action="https://github.com/horoshopodumaj/recommendations" target="_blank">
                                             <button className="modal__button">GitHub</button>
                                         </form>
-                                        <form
-                                            action="https://recommendations-sggu.onrender.com/"
-                                            target="_blank">
-                                            <button className="modal__button">Live Site</button>
+                                        <form action="https://recommendations-sggu.onrender.com/" target="_blank">
+                                            <button className="modal__button">
+                                                <FormattedMessage id="liveSite" />
+                                            </button>
                                         </form>
                                     </div>
                                 </div>

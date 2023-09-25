@@ -1,13 +1,12 @@
+import CloseIcon from "@mui/icons-material/Close";
 import { IconButton, Modal } from "@mui/material";
 import { useState } from "react";
+import { FormattedMessage } from "react-intl";
+import Slider from "react-slick";
 import shop from "../../assets/img/projects/furn.jpg";
 import shop2 from "../../assets/img/projects/furn2.jpg";
 import shop3 from "../../assets/img/projects/furn3.jpg";
-import shop4 from "../../assets/img/projects/furn4.jpg";
 import shop5 from "../../assets/img/projects/furn5.jpg";
-import Slider from "react-slick";
-import CloseIcon from "@mui/icons-material/Close";
-import { FormattedMessage } from "react-intl";
 
 export default function Shop() {
     const [open, setOpen] = useState(false);
@@ -39,9 +38,7 @@ export default function Shop() {
                 aria-describedby="modal-modal-description">
                 <div className="modal__container">
                     <div className="modal__body">
-                        <IconButton
-                            onClick={handleClose}
-                            sx={{ padding: 0, paddingLeft: "5px", float: "right" }}>
+                        <IconButton onClick={handleClose} sx={{ padding: 0, paddingLeft: "5px", float: "right" }}>
                             <CloseIcon
                                 sx={{
                                     "&:hover": {
@@ -71,15 +68,13 @@ export default function Shop() {
                                         <FormattedMessage id="shopDesc" />
                                     </div>
                                     <div className="modal__buttons">
-                                        <form
-                                            action="https://github.com/horoshopodumaj/furniture"
-                                            target="_blank">
+                                        <form action="https://github.com/horoshopodumaj/furniture" target="_blank">
                                             <button className="modal__button">GitHub</button>
                                         </form>
-                                        <form
-                                            action="https://furniture-five.vercel.app/index.html"
-                                            target="_blank">
-                                            <button className="modal__button">Live Site</button>
+                                        <form action="https://furniture-five.vercel.app/index.html" target="_blank">
+                                            <button className="modal__button">
+                                                <FormattedMessage id="liveSite" />
+                                            </button>
                                         </form>
                                     </div>
                                 </div>

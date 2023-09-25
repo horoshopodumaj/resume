@@ -1,12 +1,11 @@
+import CloseIcon from "@mui/icons-material/Close";
 import { IconButton, Modal } from "@mui/material";
+import "overlayscrollbars/overlayscrollbars.css";
 import { useState } from "react";
+import { FormattedMessage } from "react-intl";
+import Slider from "react-slick";
 import login from "../../assets/img/projects/login11.jpg";
 import login2 from "../../assets/img/projects/login21.jpg";
-import Slider from "react-slick";
-import CloseIcon from "@mui/icons-material/Close";
-import { FormattedMessage } from "react-intl";
-import { OverlayScrollbars } from "overlayscrollbars";
-import "overlayscrollbars/overlayscrollbars.css";
 
 export default function Login() {
     const [open, setOpen] = useState(false);
@@ -38,9 +37,7 @@ export default function Login() {
                 aria-describedby="modal-modal-description">
                 <div className="modal__container">
                     <div className="modal__body">
-                        <IconButton
-                            onClick={handleClose}
-                            sx={{ padding: 0, paddingLeft: "5px", float: "right" }}>
+                        <IconButton onClick={handleClose} sx={{ padding: 0, paddingLeft: "5px", float: "right" }}>
                             <CloseIcon
                                 sx={{
                                     "&:hover": {
@@ -62,22 +59,18 @@ export default function Login() {
                                     </Slider>
                                 </div>
                                 <div className="modal__info">
-                                    <div className="modal__tech">
-                                        React, Node.js, Express, MongoDB
-                                    </div>
+                                    <div className="modal__tech">React, Node.js, Express, MongoDB</div>
                                     <div className="modal__desc">
                                         <FormattedMessage id="loginDesc" />
                                     </div>
                                     <div className="modal__buttons">
-                                        <form
-                                            action="https://github.com/horoshopodumaj/webfull"
-                                            target="_blank">
+                                        <form action="https://github.com/horoshopodumaj/webfull" target="_blank">
                                             <button className="modal__button">GitHub</button>
                                         </form>
-                                        <form
-                                            action="https://mern-task-four-client.onrender.com/"
-                                            target="_blank">
-                                            <button className="modal__button">Live Site</button>
+                                        <form action="https://mern-task-four-client.onrender.com/" target="_blank">
+                                            <button className="modal__button">
+                                                <FormattedMessage id="liveSite" />
+                                            </button>
                                         </form>
                                     </div>
                                 </div>

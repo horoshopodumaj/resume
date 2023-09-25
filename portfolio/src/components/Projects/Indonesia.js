@@ -1,11 +1,11 @@
+import CloseIcon from "@mui/icons-material/Close";
 import { Box, IconButton, Modal } from "@mui/material";
 import { useRef, useState } from "react";
+import { FormattedMessage } from "react-intl";
+import Slider from "react-slick";
 import indonesia from "../../assets/img/projects/indonesia11.jpg";
 import indonesia2 from "../../assets/img/projects/indonesia2.jpg";
 import indonesia4 from "../../assets/img/projects/indonesia4.jpg";
-import Slider from "react-slick";
-import CloseIcon from "@mui/icons-material/Close";
-import { FormattedMessage } from "react-intl";
 import { useScrollbar } from "../../hooks/useScrollbar";
 
 export default function Indonesia() {
@@ -58,18 +58,9 @@ export default function Indonesia() {
                             <div className="modal__inner">
                                 <div className="modal__gallery">
                                     <Slider {...settings}>
-                                        <img
-                                            className="modal__img"
-                                            src={indonesia}
-                                            alt="indonesia"></img>
-                                        <img
-                                            className="modal__img"
-                                            src={indonesia2}
-                                            alt="indonesia"></img>
-                                        <img
-                                            className="modal__img"
-                                            src={indonesia4}
-                                            alt="indonesia"></img>
+                                        <img className="modal__img" src={indonesia} alt="indonesia"></img>
+                                        <img className="modal__img" src={indonesia2} alt="indonesia"></img>
+                                        <img className="modal__img" src={indonesia4} alt="indonesia"></img>
                                     </Slider>
                                 </div>
                                 <div className="modal__info">
@@ -78,15 +69,13 @@ export default function Indonesia() {
                                         <FormattedMessage id="indonesiaDesc" />
                                     </div>
                                     <div className="modal__buttons">
-                                        <form
-                                            action="https://github.com/horoshopodumaj/indonesia"
-                                            target="_blank">
+                                        <form action="https://github.com/horoshopodumaj/indonesia" target="_blank">
                                             <button className="modal__button">GitHub</button>
                                         </form>
-                                        <form
-                                            action="https://indonesia-green.vercel.app/"
-                                            target="_blank">
-                                            <button className="modal__button">Live Site</button>
+                                        <form action="https://indonesia-green.vercel.app/" target="_blank">
+                                            <button className="modal__button">
+                                                <FormattedMessage id="liveSite" />
+                                            </button>
                                         </form>
                                     </div>
                                 </div>

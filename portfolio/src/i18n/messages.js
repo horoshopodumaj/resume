@@ -97,6 +97,7 @@ export const messages = {
         Filtering by post categories is available. When writing a post, you can insert an image, a video. The text of the post can be stylized (bold text, italics, etc.) by highlighting part of the text.
         Media files used in posts are stored in Firebase.
         The application implements dark and light themes. The site is adaptive, there is a burger menu.`,
+        liveSite: `Live Site`,
     },
     [LOCALES.RU]: {
         name: "Диана Муртазина",
@@ -178,5 +179,6 @@ export const messages = {
         Доступна фильтрация по категориям постов. При написании поста можно вставить изображение, видео. Текст поста можно стилизовать (жирный текст, курсив и т.д.), выделив часть текста.
         Медиа файлы, используемые в постах хранятся в Firebase.
         В приложении реализованы темная и светлая темы. Сайт адаптивен, есть бургер-меню.`,
+        liveSite: `Сайт`,
     },
 };

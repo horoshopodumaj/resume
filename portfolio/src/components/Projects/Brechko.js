@@ -1,11 +1,11 @@
+import CloseIcon from "@mui/icons-material/Close";
 import { IconButton, Modal } from "@mui/material";
 import { useState } from "react";
+import { FormattedMessage } from "react-intl";
+import Slider from "react-slick";
 import sasha from "../../assets/img/projects/sasha11.jpg";
 import sasha2 from "../../assets/img/projects/sasha21.jpg";
 import sasha3 from "../../assets/img/projects/sasha31.jpg";
-import Slider from "react-slick";
-import CloseIcon from "@mui/icons-material/Close";
-import { FormattedMessage } from "react-intl";
 
 export default function Brechko() {
     const [open, setOpen] = useState(false);
@@ -37,9 +37,7 @@ export default function Brechko() {
                 aria-describedby="modal-modal-description">
                 <div className="modal__container">
                     <div className="modal__body">
-                        <IconButton
-                            onClick={handleClose}
-                            sx={{ padding: 0, paddingLeft: "5px", float: "right" }}>
+                        <IconButton onClick={handleClose} sx={{ padding: 0, paddingLeft: "5px", float: "right" }}>
                             <CloseIcon
                                 sx={{
                                     "&:hover": {
@@ -67,13 +65,13 @@ export default function Brechko() {
                                         <FormattedMessage id="sashaDesc" />
                                     </div>
                                     <div className="modal__buttons">
-                                        <form
-                                            action="https://github.com/horoshopodumaj/brechko"
-                                            target="_blank">
+                                        <form action="https://github.com/horoshopodumaj/brechko" target="_blank">
                                             <button className="modal__button">GitHub</button>
                                         </form>
                                         <form action="https://brechko.vercel.app" target="_blank">
-                                            <button className="modal__button">Live Site</button>
+                                            <button className="modal__button">
+                                                <FormattedMessage id="liveSite" />
+                                            </button>
                                         </form>
                                     </div>
                                 </div>

@@ -76,7 +76,9 @@ export default function Blog() {
                                             <button className="modal__button">GitHub</button>
                                         </form>
                                         <form action="https://blog-kzuyudojj-horoshopodumaj.vercel.app" target="_blank">
-                                            <button className="modal__button">Live Site</button>
+                                            <button className="modal__button">
+                                                <FormattedMessage id="liveSite" />
+                                            </button>
                                         </form>
                                     </div>
                                 </div>
