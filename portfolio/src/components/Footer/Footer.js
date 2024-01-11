@@ -1,4 +1,4 @@
-import { FormattedDate, FormattedMessage } from "react-intl";
+import { FormattedMessage } from "react-intl";
 import "./footer.scss";
 
 export default function Footer() {
@@ -7,7 +7,7 @@ export default function Footer() {
             <p className="footer__author">
                 <FormattedMessage id="author" />
             </p>
-            <p className="footer__year">2023</p>
+            <p className="footer__year">{new Date().getFullYear()}</p>
         </footer>
     );
 }

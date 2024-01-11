@@ -98,6 +98,12 @@ export const messages = {
         Media files used in posts are stored in Firebase.
         The application implements dark and light themes. The site is adaptive, there is a burger menu.`,
         liveSite: `Live Site`,
+        kanbanTitle: `Kanban board`,
+        kanbanDesc: `
+        The application is written in React (Vite), using Tailwindcss. The Redux Toolkit is used as a status manager.
+        In the application, you can create an unlimited number of independent boards in which you can create an unlimited number of independent columns. Tasks are moved between columns by dragging and in editing mode. You can add several subtasks to each task. 
+        You can switch between dark and light themes. There is a collapsible menu.
+        `,
     },
     [LOCALES.RU]: {
         name: "Диана Муртазина",
@@ -180,5 +186,11 @@ export const messages = {
         Медиа файлы, используемые в постах хранятся в Firebase.
         В приложении реализованы темная и светлая темы. Сайт адаптивен, есть бургер-меню.`,
         liveSite: `Сайт`,
+        kanbanTitle: `Канбан доска`,
+        kanbanDesc: `
+        Приложение написано на React (Vite), с использованием Tailwindcss. В качестве менеджера состояний используется Redux Toolkit.
+        В приложении можно создать неограниченное количество независимых досок, в которых можно создать неограниченное количество независимых колонок. Перемещение задач между колонками происходит перетаскиванием и в режиме редактирования. В каждую задачу можно добавить несколько подзадач. 
+        Можно переключаться между темной и светлой темами. Есть сворачивающееся меню.
+        `,
     },
 };

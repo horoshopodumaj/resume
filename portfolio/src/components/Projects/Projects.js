@@ -4,8 +4,8 @@ import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
 import Blog from "./Blog";
 import Brechko from "./Brechko";
+import KanbanBoard from "./KanbanBoard";
 import Login from "./Login";
-import Recommend from "./Recommend";
 import Shop from "./Shop";
 import Sup from "./Sup";
 import "./projects.scss";
@@ -27,7 +27,8 @@ const Projects = forwardRef((props, projectsRef) => {
                         <Brechko />
                         <Sup />
                         <Blog />
-                        <Recommend />
+                        <KanbanBoard />
+                        {/* <Recommend /> */}
                         <Login />
                         <Shop />
                     </div>

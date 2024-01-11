@@ -49,15 +49,12 @@ const About = forwardRef((props, aboutRef) => {
                             <span className="about__caption">
                                 <FormattedMessage id="aboutSkills" />
                             </span>
-                            - HTML, CSS, SCSS; <br /> - JavaScript, Typescript; <br /> - React.js, Next.js; <br /> - <FormattedMessage id="aboutSkillsDesc" />, Materialize, MUI, FlexBox, Grid;
-                            <br /> - Gulp
+                            - HTML, CSS, SCSS; <br /> - JavaScript, Typescript; <br /> - React.js, Next.js; <br /> - Redux Toolkit, MobX; <br /> - <FormattedMessage id="aboutSkillsDesc" />, FlexBox,
+                            Grid;
+                            <br /> - Tailwindcss, Materialize, MUI;
+                            <br /> - Gulp, Webpack;
+                            <br /> - Docker;
                         </p>
-                        {/* <p className="about__desc">
-                            <span className="about__caption">
-                                <FormattedMessage id="aboutReaspon" />
-                            </span>
-                            <FormattedMessage id="aboutReasponDesc" />
-                        </p> */}
                     </div>
                     <div className="about__info">
                         <ul className="about__list">
@@ -91,28 +88,28 @@ const About = forwardRef((props, aboutRef) => {
                         <div className="skills__item">
                             <div className="skills__content">
                                 <p className="skills__text">CSS</p>
-                                <p className="skills__num">80%</p>
+                                <p className="skills__num">85%</p>
                             </div>
                             <div className="skills__bar">
-                                <div className="skills__line" style={{ width: "80%" }}></div>
+                                <div className="skills__line" style={{ width: "85%" }}></div>
                             </div>
                         </div>
                         <div className="skills__item">
                             <div className="skills__content">
                                 <p className="skills__text">Javascript</p>
-                                <p className="skills__num">70%</p>
+                                <p className="skills__num">75%</p>
                             </div>
                             <div className="skills__bar">
-                                <div className="skills__line" style={{ width: "70%" }}></div>
+                                <div className="skills__line" style={{ width: "75%" }}></div>
                             </div>
                         </div>
                         <div className="skills__item">
                             <div className="skills__content">
                                 <p className="skills__text">React</p>
-                                <p className="skills__num">65%</p>
+                                <p className="skills__num">70%</p>
                             </div>
                             <div className="skills__bar">
-                                <div className="skills__line" style={{ width: "65%" }}></div>
+                                <div className="skills__line" style={{ width: "70%" }}></div>
                             </div>{" "}
                         </div>
                         <div className="skills__item">
@@ -127,28 +124,28 @@ const About = forwardRef((props, aboutRef) => {
                         <div className="skills__item">
                             <div className="skills__content">
                                 <p className="skills__text">Next.js</p>
-                                <p className="skills__num">40%</p>
+                                <p className="skills__num">50%</p>
                             </div>
                             <div className="skills__bar">
-                                <div className="skills__line" style={{ width: "40%" }}></div>
+                                <div className="skills__line" style={{ width: "50%" }}></div>
                             </div>{" "}
                         </div>
                         <div className="skills__item">
                             <div className="skills__content">
                                 <p className="skills__text">Redux Toolkit</p>
-                                <p className="skills__num">50%</p>
+                                <p className="skills__num">70%</p>
                             </div>
                             <div className="skills__bar">
-                                <div className="skills__line" style={{ width: "50%" }}></div>
+                                <div className="skills__line" style={{ width: "70%" }}></div>
                             </div>
                         </div>
                         <div className="skills__item">
                             <div className="skills__content">
                                 <p className="skills__text">Typescript</p>
-                                <p className="skills__num">40%</p>
+                                <p className="skills__num">50%</p>
                             </div>
                             <div className="skills__bar">
-                                <div className="skills__line" style={{ width: "40%" }}></div>
+                                <div className="skills__line" style={{ width: "50%" }}></div>
                             </div>
                         </div>
                     </div>

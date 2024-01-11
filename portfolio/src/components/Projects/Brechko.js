@@ -29,12 +29,7 @@ export default function Brechko() {
                     <p className="project__text">React/MUI</p>
                 </div>
             </button>
-            <Modal
-                className="modal"
-                open={open}
-                //onClose={handleClose}
-                aria-labelledby="modal-modal-title"
-                aria-describedby="modal-modal-description">
+            <Modal className="modal" open={open} aria-labelledby="modal-modal-title" aria-describedby="modal-modal-description">
                 <div className="modal__container">
                     <div className="modal__body">
                         <IconButton onClick={handleClose} sx={{ padding: 0, paddingLeft: "5px", float: "right" }}>

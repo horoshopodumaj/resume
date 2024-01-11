@@ -1,21 +1,17 @@
 import CloseIcon from "@mui/icons-material/Close";
-import { Box, IconButton, Modal } from "@mui/material";
-import { useRef, useState } from "react";
+import { IconButton, Modal } from "@mui/material";
+import "overlayscrollbars/overlayscrollbars.css";
+import { useState } from "react";
 import { FormattedMessage } from "react-intl";
 import Slider from "react-slick";
-import blog1 from "../../assets/img/projects/blog1.jpg";
-import blog from "../../assets/img/projects/blog12.jpg";
-import blog13 from "../../assets/img/projects/blog13.jpg";
-import blog2 from "../../assets/img/projects/blog2.jpg";
-import blog3 from "../../assets/img/projects/blog3.jpg";
-import { useScrollbar } from "../../hooks/useScrollbar";
+import kanban from "../../assets/img/projects/kanban.jpg";
+import kanban1 from "../../assets/img/projects/kanban1.jpg";
+import kanban2 from "../../assets/img/projects/kanban2.jpg";
 
-export default function Blog() {
+export default function KanbanBoard() {
     const [open, setOpen] = useState(false);
     const handleOpen = () => setOpen(true);
     const handleClose = () => setOpen(false);
-    const modal = useRef(null);
-    useScrollbar(modal);
     const settings = {
         dots: true,
         infinite: true,
@@ -28,16 +24,16 @@ export default function Blog() {
     return (
         <div className="project">
             <button className="project__item" onClick={handleOpen}>
-                <img className="project__img" src={blog13} alt="blog"></img>
+                <img className="project__img" src={kanban} alt="kanban"></img>
                 <div className="project__info">
-                    <h6 className="project__subtitle">Blog</h6>
-                    <p className="project__text">Next.js/Node.js</p>
+                    <h6 className="project__subtitle">kanban board</h6>
+                    <p className="project__text">React/Vite</p>
                 </div>
             </button>
             <Modal className="modal" open={open} aria-labelledby="modal-modal-title" aria-describedby="modal-modal-description">
-                <Box className="modal__container" ref={modal}>
+                <div className="modal__container">
                     <div className="modal__body">
-                        <IconButton onClick={handleClose} sx={{ padding: "5px", float: "right" }}>
+                        <IconButton onClick={handleClose} sx={{ padding: 0, paddingLeft: "5px", float: "right" }}>
                             <CloseIcon
                                 sx={{
                                     "&:hover": {
@@ -49,27 +45,26 @@ export default function Blog() {
                         </IconButton>
                         <div className="modal__content">
                             <h3 className="modal__title">
-                                <FormattedMessage id="blogTitle" />
+                                <FormattedMessage id="kanbanTitle" />
                             </h3>
                             <div className="modal__inner">
                                 <div className="modal__gallery">
                                     <Slider {...settings}>
-                                        <img className="modal__img" src={blog} alt="blog"></img>
-                                        <img className="modal__img" src={blog1} alt="blog"></img>
-                                        <img className="modal__img" src={blog2} alt="blog"></img>
-                                        <img className="modal__img" src={blog3} alt="blog"></img>
+                                        <img className="modal__img" src={kanban} alt="kanban"></img>
+                                        <img className="modal__img" src={kanban1} alt="kanban"></img>
+                                        <img className="modal__img" src={kanban2} alt="kanban"></img>
                                     </Slider>
                                 </div>
                                 <div className="modal__info">
-                                    <div className="modal__tech">Next.js, Node.js, MongoDB</div>
+                                    <div className="modal__tech">React, Vite, Tailwindcss, Redux Toolkit</div>
                                     <div className="modal__desc">
-                                        <FormattedMessage id="blogDesc" />
+                                        <FormattedMessage id="kanbanDesc" />
                                     </div>
                                     <div className="modal__buttons">
-                                        <form action="https://github.com/horoshopodumaj/blogApp" target="_blank">
+                                        <form action="https://github.com/horoshopodumaj/kanban_board" target="_blank">
                                             <button className="modal__button">GitHub</button>
                                         </form>
-                                        <form action="https://blog-kzuyudojj-horoshopodumaj.vercel.app" target="_blank">
+                                        <form action="https://kanban-board-snowy-psi.vercel.app/" target="_blank">
                                             <button className="modal__button">
                                                 <FormattedMessage id="liveSite" />
                                             </button>
@@ -79,7 +74,7 @@ export default function Blog() {
                             </div>
                         </div>
                     </div>
-                </Box>
+                </div>
             </Modal>
         </div>
     );

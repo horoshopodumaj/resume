@@ -32,13 +32,7 @@ export default function Indonesia() {
                     <p className="project__text">HTML/CSS/JS</p>
                 </div>
             </button>
-            <Modal
-                className="modal"
-                open={open}
-                //ref={modal}
-                //onClose={handleClose}
-                aria-labelledby="modal-modal-title"
-                aria-describedby="modal-modal-description">
+            <Modal className="modal" open={open} aria-labelledby="modal-modal-title" aria-describedby="modal-modal-description">
                 <Box className="modal__container" ref={modal}>
                     <div className="modal__body">
                         <IconButton onClick={handleClose} sx={{ padding: "5px", float: "right" }}>
