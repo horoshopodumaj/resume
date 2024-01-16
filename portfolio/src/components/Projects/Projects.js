@@ -2,12 +2,8 @@ import React, { forwardRef } from "react";
 import { FormattedMessage } from "react-intl";
 import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
-import Blog from "./Blog";
-import Brechko from "./Brechko";
-import KanbanBoard from "./KanbanBoard";
-import Login from "./Login";
-import Shop from "./Shop";
-import Sup from "./Sup";
+import { projects } from "../../data.js";
+import Project from "../Project";
 import "./projects.scss";
 
 const Projects = forwardRef((props, projectsRef) => {
@@ -24,13 +20,9 @@ const Projects = forwardRef((props, projectsRef) => {
                 </div>
                 <div className="projects__inner">
                     <div className="projects__items">
-                        <Brechko />
-                        <Sup />
-                        <Blog />
-                        <KanbanBoard />
-                        {/* <Recommend /> */}
-                        <Login />
-                        <Shop />
+                        {projects.map((project) => {
+                            return <Project project={project} key={project.id} />;
+                        })}
                     </div>
                 </div>
             </div>

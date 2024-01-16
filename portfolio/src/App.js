@@ -52,7 +52,6 @@ function App() {
             <IntlProvider
                 onError={(err) => {
                     if (err.code === "MISSING_TRANSLATION") {
-                        //console.warn("Missing translation", err.message);
                         return;
                     }
                     throw err;

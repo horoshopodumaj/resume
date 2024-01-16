@@ -104,6 +104,14 @@ export const messages = {
         In the application, you can create an unlimited number of independent boards in which you can create an unlimited number of independent columns. Tasks are moved between columns by dragging and in editing mode. You can add several subtasks to each task. 
         You can switch between dark and light themes. There is a collapsible menu.
         `,
+        dashboardTitle: `Dashboard`,
+        dashboardDesc: `
+        The application is written in React (Vite).
+        The main page of the application presents various graphs that are implemented using the recharts library.
+        You can add/remove users and products in the application. If desired, you can add other pages. 
+        When connecting the backend, it is possible to implement a dynamic transition to user pages and products. 
+        The layout is adaptive.
+        `,
     },
     [LOCALES.RU]: {
         name: "Диана Муртазина",
@@ -191,6 +199,14 @@ export const messages = {
         Приложение написано на React (Vite), с использованием Tailwindcss. В качестве менеджера состояний используется Redux Toolkit.
         В приложении можно создать неограниченное количество независимых досок, в которых можно создать неограниченное количество независимых колонок. Перемещение задач между колонками происходит перетаскиванием и в режиме редактирования. В каждую задачу можно добавить несколько подзадач. 
         Можно переключаться между темной и светлой темами. Есть сворачивающееся меню.
+        `,
+        dashboardTitle: `Доска`,
+        dashboardDesc: `
+        Приложение написано на React (Vite).
+        На главной странице приложения представлены различные графики, которые реализованы с помощью библиотеки recharts.
+        В приложении можно добавлять/удалять пользователей, товары. При желании можно добавить и другие страницы. 
+        При подключение backend возможно реализовать динамический переход на страницы пользователей и товары. 
+        Верстка адаптивная.
         `,
     },
 };
